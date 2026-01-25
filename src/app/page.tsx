@@ -92,52 +92,12 @@ const testimonials = [
   },
 ];
 
-const stats = [
-  { number: 15, suffix: '+', label: 'Years Experience' },
-  { number: 5000, suffix: '+', label: 'Happy Patients' },
-  { number: 5, suffix: '.0', label: 'Star Rating' },
-];
-
 const photoScrollImages = [
   '/images/photoscroll1.jpg',
   '/images/photoscroll2.jpg',
   '/images/photoscroll3.jpeg',
   '/images/photoscroll4.jpg',
 ];
-
-// Animated Counter Component
-function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (isInView) {
-      const duration = 2000;
-      const steps = 60;
-      const increment = target / steps;
-      let current = 0;
-
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          setCount(target);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(current));
-        }
-      }, duration / steps);
-
-      return () => clearInterval(timer);
-    }
-  }, [isInView, target]);
-
-  return (
-    <span ref={ref}>
-      {count.toLocaleString()}{suffix}
-    </span>
-  );
-}
 
 function PhotoScroll() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -376,21 +336,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-[#2d5a27]">
+      {/* Tagline Banner */}
+      <section className="py-12 bg-[#2d5a27]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <AnimatedSection key={stat.label} delay={index * 0.1}>
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
-                    <AnimatedCounter target={stat.number} suffix={stat.suffix} />
-                  </div>
-                  <p className="text-white/80 text-sm md:text-base">{stat.label}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+          <AnimatedSection>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white text-center italic">
+              &ldquo;Rooted in care, blooming in smiles&rdquo;
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
