@@ -317,9 +317,9 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
           >
-            Where Little Smiles
+            Where Little <span className="text-[#a8e6cf]">Smiles</span>
             <br />
-            <span className="text-[#a8e6cf]">Take Root</span>
+            Take Root
           </motion.h1>
 
           <motion.div
