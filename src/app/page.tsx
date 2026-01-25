@@ -145,7 +145,7 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2d5a27]/85 via-[#2d5a27]/75 to-[#2d5a27]/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
         </div>
 
         {/* Hero Content - Centered */}
