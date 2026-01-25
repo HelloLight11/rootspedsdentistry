@@ -19,6 +19,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -180,7 +181,7 @@ export default function Header() {
             transition={{ duration: 0.3 }}
             className="lg:hidden bg-white border-t border-gray-100 shadow-lg"
           >
-            <div className="px-4 py-4 space-y-2">
+            <div className="px-4 py-4 space-y-1">
               <Link
                 href="/"
                 className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
@@ -195,21 +196,52 @@ export default function Header() {
               >
                 About
               </Link>
-              <div className="py-2">
-                <p className="px-4 py-2 text-sm font-semibold text-[#2d5a27] uppercase tracking-wider">
+
+              {/* Services Dropdown */}
+              <div>
+                <button
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="w-full flex items-center justify-between py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
+                >
                   Services
-                </p>
-                {services.map((service) => (
-                  <Link
-                    key={service.href}
-                    href={service.href}
-                    className="block py-2 px-6 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors text-sm"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    {service.name}
-                  </Link>
-                ))}
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <AnimatePresence>
+                  {isMobileServicesOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="py-2 pl-4">
+                        {services.map((service) => (
+                          <Link
+                            key={service.href}
+                            href={service.href}
+                            className="block py-2 px-4 text-[#4b5563] hover:bg-[#b8f5a6]/30 hover:text-[#2d5a27] rounded-lg transition-colors text-sm"
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsMobileServicesOpen(false);
+                            }}
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
+
               <Link
                 href="/contact"
                 className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
@@ -217,13 +249,15 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <Link
-                href="/contact"
-                className="block py-3 px-4 bg-[#2d5a27] text-white text-center rounded-full font-semibold hover:bg-[#478449] transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Book Appointment
-              </Link>
+              <div className="pt-2">
+                <Link
+                  href="/contact"
+                  className="block py-3 px-4 bg-[#2d5a27] text-white text-center rounded-full font-semibold hover:bg-[#478449] transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Book Appointment
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
