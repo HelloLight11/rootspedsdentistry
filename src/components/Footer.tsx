@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,16 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & About */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-8 h-8 text-[#b8f5a6]"
-                  fill="currentColor"
-                >
-                  <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.5-.5 1.1-.5 1.8 0 1.5 1 2.8 2.4 3.2-.2.4-.2.8-.2 1.3 0 1.7 1.3 3 3 3s3-1.3 3-3c0-.5-.1-.9-.2-1.3 1.4-.4 2.4-1.7 2.4-3.2 0-.7-.2-1.3-.5-1.8 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2zm0 2c1.4 0 2.5 1.1 2.5 2.5S13.4 9 12 9 9.5 7.9 9.5 6.5 10.6 4 12 4z" />
-                </svg>
-              </div>
+            <div className="mb-6">
+              <Image
+                src="/images/footer-logo.png"
+                alt="Roots Pediatric Dentistry"
+                width={180}
+                height={80}
+                className="brightness-0 invert"
+              />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
               Planting seeds for lifelong smiles. Dedicated to making dental visits a joyful experience for kids and parents alike.
