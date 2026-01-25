@@ -250,6 +250,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Meet the Doctor Section */}
+      <section className="py-20 bg-[#f8f9fc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection direction="left">
+              <div className="relative">
+                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/drjoey-photo.jpg"
+                    alt="Dr. Joey Pedram"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#b8f5a6] rounded-2xl -z-10" />
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection direction="right" delay={0.2}>
+              <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+                Meet Your Dentist
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">
+                Dr. Joey Pedram
+              </h2>
+              <p className="text-[#4b5563] leading-relaxed mb-4">
+                Dr. Joey is a pediatric dentist with over 13 years of experience caring
+                for children&apos;s smiles. He received his dental degree from USC School of Dentistry
+                and completed his pediatric residency at Tufts University.
+              </p>
+              <p className="text-[#4b5563] leading-relaxed mb-6">
+                His gentle approach and genuine love for working with children make every visit
+                a positive experience. You might even catch him singing a song while counting teeth!
+              </p>
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
+                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Pediatric Specialist
+                </span>
+                <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
+                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  13+ Years Experience
+                </span>
+                <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
+                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  USC Graduate
+                </span>
+              </div>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 bg-[#2d5a27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#478449] transition-all duration-300"
+              >
+                Learn More About Dr. Joey
+              </Link>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section className="py-20 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -299,71 +364,6 @@ export default function Home() {
               See All Services
             </Link>
           </AnimatedSection>
-        </div>
-      </section>
-
-      {/* Meet the Doctor Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection direction="left">
-              <div className="relative">
-                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/drjoey-photo.jpg"
-                    alt="Dr. Joey Pedram"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#b8f5a6] rounded-2xl -z-10" />
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection direction="right" delay={0.2}>
-              <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-                Meet Your Dentist
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">
-                Dr. Joey Pedram
-              </h2>
-              <p className="text-[#4b5563] leading-relaxed mb-4">
-                Dr. Joey is a pediatric dentist with over 13 years of experience caring
-                for children&apos;s smiles. He received his dental degree from USC School of Dentistry
-                and completed his pediatric residency at Tufts University.
-              </p>
-              <p className="text-[#4b5563] leading-relaxed mb-6">
-                His gentle approach and genuine love for working with children make every visit
-                a positive experience. You might even catch him singing a song while counting teeth!
-              </p>
-              <div className="flex flex-wrap gap-3 mb-8">
-                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
-                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Pediatric Specialist
-                </span>
-                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
-                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  13+ Years Experience
-                </span>
-                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
-                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  USC Graduate
-                </span>
-              </div>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 bg-[#2d5a27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#478449] transition-all duration-300"
-              >
-                Learn More About Dr. Joey
-              </Link>
-            </AnimatedSection>
-          </div>
         </div>
       </section>
 
