@@ -163,10 +163,10 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#2d5a27] mb-6 leading-tight"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Where Little <span className="text-[#a8e6cf]">Smiles</span> Take Root
+            Where Little <span className="text-[#478449]">Smiles</span> Take Root
           </motion.h1>
 
           <motion.p
