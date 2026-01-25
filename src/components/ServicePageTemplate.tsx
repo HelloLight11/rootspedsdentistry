@@ -43,7 +43,7 @@ export default function ServicePageTemplate({
       {/* Main Content */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             <AnimatedSection>
               <div className="space-y-6">
                 {description.map((paragraph, index) => (
