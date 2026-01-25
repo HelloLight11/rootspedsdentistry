@@ -8,28 +8,46 @@ import { useState, useEffect } from 'react';
 
 const services = [
   {
+    title: 'First Visit',
+    description:
+      'Make your child\'s first dental experience positive and fun. We take our time to introduce your child to our office and ensure they feel safe.',
+    href: '/services/first-visit',
+    icon: 'star',
+  },
+  {
+    title: 'Infant Dentistry',
+    description:
+      'Early dental care starting from the first tooth. We help establish healthy habits from the very beginning of your child\'s dental journey.',
+    href: '/services/infant-dentistry',
+    icon: 'baby',
+  },
+  {
     title: 'Preventative Care',
     description:
-      'Regular dental check-ups and cleanings are vital for kids\' healthy smiles. Our warm, welcoming dental team ensures your child\'s teeth and gums stay sparkling and strong.',
+      'Regular check-ups and cleanings keep your child\'s teeth and gums sparkling and strong. Prevention is the foundation of lifelong oral health.',
     href: '/services/preventative-care',
+    icon: 'shield',
   },
   {
     title: 'Restorative Dentistry',
     description:
-      'At Roots, we\'re dedicated to making your child\'s smile shine brighter than ever. From filling cavities to performing specialized procedures like SDF and pulpotomies.',
+      'From filling cavities to specialized procedures like SDF and pulpotomies, we restore your child\'s smile to full health.',
     href: '/services/restorative-dentistry',
+    icon: 'tooth',
   },
   {
     title: 'Sedation Dentistry',
     description:
-      'We offer multiple sedation methods including oral sedation and IV sedation to ensure your child\'s comfort during dental procedures.',
+      'Multiple sedation options including oral and IV sedation ensure your child\'s comfort during any dental procedure.',
     href: '/services/sedation-dentistry',
+    icon: 'calm',
   },
   {
-    title: 'Emergency Dentistry',
+    title: 'Special Needs Dentistry',
     description:
-      'When your child faces a dental emergency, prompt care is key to relieving their pain. Toothaches, chipped teeth, or other issues need immediate attention.',
-    href: '/services/emergency-dentistry',
+      'Compassionate, patient care tailored for children with special needs. Every child deserves a positive dental experience.',
+    href: '/services/special-needs-dentistry',
+    icon: 'heart',
   },
 ];
 
@@ -250,8 +268,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet the Doctor Section */}
+      {/* Why Choose Us Section */}
       <section className="py-20 bg-[#f8f9fc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+              Why Families Love Us
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
+              A Dental Home Your Child Will Love
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: 'Fun Environment',
+                description: 'Kid-friendly office designed to make dental visits exciting',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                ),
+                title: 'Gentle Care',
+                description: 'Patient, compassionate approach for anxious little ones',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                ),
+                title: '15+ Years Experience',
+                description: 'Trusted expertise in pediatric dental care',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: 'Convenient Hours',
+                description: 'Flexible scheduling that works for busy families',
+              },
+            ].map((feature, index) => (
+              <AnimatedSection key={feature.title} delay={index * 0.1}>
+                <div className="bg-white p-6 rounded-2xl text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                  <div className="w-16 h-16 bg-[#b8f5a6]/30 rounded-full flex items-center justify-center mx-auto mb-4 text-[#2d5a27] group-hover:bg-[#2d5a27] group-hover:text-white transition-all duration-300">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-[#1e293b] mb-2">{feature.title}</h3>
+                  <p className="text-sm text-[#4b5563]">{feature.description}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Doctor Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
@@ -323,52 +406,61 @@ export default function Home() {
               Our Services
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
-              What We Offer
+              Comprehensive Care for Growing Smiles
             </h2>
             <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
-              Quality dental care designed specifically for children in a warm, welcoming environment.
+              From baby&apos;s first tooth to teenage braces, we provide complete dental care for every stage.
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <AnimatedSection key={service.title} delay={index * 0.1}>
-                <Link href={service.href} className="block h-full">
-                  <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-[#2d5a27] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
-                    <div className="w-16 h-16 bg-gradient-to-br from-[#2d5a27] to-[#478449] rounded-full flex items-center justify-center mb-6">
+              <AnimatedSection key={service.title} delay={index * 0.08}>
+                <Link href={service.href} className="block h-full group">
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 hover:border-[#2d5a27] hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] h-full">
+                    <div className="w-14 h-14 bg-gradient-to-br from-[#2d5a27] to-[#478449] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                       <svg
-                        className="w-8 h-8 text-white"
+                        className="w-7 h-7 text-white"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
                         <path d="M12 2C9.24 2 7 4.24 7 7c0 1.53.69 2.9 1.77 3.83-.23.59-.41 1.21-.53 1.84L7.5 22h3l.5-4h2l.5 4h3l-.74-9.33c-.12-.63-.3-1.25-.53-1.84A4.98 4.98 0 0017 7c0-2.76-2.24-5-5-5z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-[#1e293b] mb-3">
+                    <h3 className="text-lg font-bold text-[#1e293b] mb-2 group-hover:text-[#2d5a27] transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-[#4b5563] leading-relaxed">
+                    <p className="text-sm text-[#4b5563] leading-relaxed">
                       {service.description}
                     </p>
+                    <div className="mt-4 flex items-center text-[#2d5a27] font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Learn more
+                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
                   </div>
                 </Link>
               </AnimatedSection>
             ))}
           </div>
 
-          <AnimatedSection delay={0.4} className="text-center mt-10">
+          <AnimatedSection delay={0.5} className="text-center mt-10">
             <Link
-              href="/services"
-              className="inline-flex items-center gap-2 border-2 border-[#2d5a27] text-[#2d5a27] px-8 py-3 rounded-full font-semibold hover:bg-[#2d5a27] hover:text-white transition-all duration-300"
+              href="/services/emergency-dentistry"
+              className="inline-flex items-center gap-2 bg-[#ffa797] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ff8a76] transition-all duration-300 hover:shadow-lg"
             >
-              See All Services
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Emergency? We&apos;re Here to Help
             </Link>
           </AnimatedSection>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#f8f9fc]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
@@ -385,7 +477,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <AnimatedSection key={testimonial.name} delay={index * 0.15}>
-                <div className="bg-white p-8 rounded-2xl h-full flex flex-col hover:shadow-lg transition-all duration-300">
+                <div className="bg-[#f8f9fc] p-8 rounded-2xl h-full flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-[#b8f5a6] group">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <svg
@@ -398,16 +490,89 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-[#4b5563] leading-relaxed mb-6 flex-grow italic">
-                    &ldquo;{testimonial.text}&rdquo;
+                  <svg className="w-8 h-8 text-[#b8f5a6] mb-3 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                  <p className="text-[#4b5563] leading-relaxed mb-6 flex-grow">
+                    {testimonial.text}
                   </p>
-                  <div>
-                    <p className="font-semibold text-[#1e293b]">{testimonial.name}</p>
-                    <p className="text-sm text-[#4b5563]">Parent</p>
+                  <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+                    <div className="w-10 h-10 bg-[#2d5a27] rounded-full flex items-center justify-center text-white font-bold">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-[#1e293b]">{testimonial.name}</p>
+                      <p className="text-sm text-[#4b5563]">Parent</p>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance & Payment Section */}
+      <section className="py-16 bg-[#f8f9fc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <AnimatedSection>
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1e293b] mb-4">
+                  Insurance & Payment Options
+                </h2>
+                <p className="text-[#4b5563] mb-6">
+                  We accept most major dental insurance plans and offer flexible payment options to make quality dental care accessible for your family.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    'Most PPO insurance plans accepted',
+                    'Flexible payment plans available',
+                    'Credit cards accepted',
+                    'HSA/FSA eligible',
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-[#2d5a27] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-[#4b5563]">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <div className="bg-[#f8f9fc] rounded-2xl p-6">
+                  <h3 className="text-lg font-bold text-[#1e293b] mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Office Hours
+                  </h3>
+                  <div className="space-y-2 text-[#4b5563]">
+                    <div className="flex justify-between">
+                      <span>Monday - Thursday</span>
+                      <span className="font-medium">9:00 AM - 5:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Friday</span>
+                      <span className="font-medium">9:00 AM - 2:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Saturday - Sunday</span>
+                      <span className="font-medium">Closed</span>
+                    </div>
+                  </div>
+                  <div className="mt-6 pt-4 border-t border-gray-200">
+                    <p className="text-sm text-[#4b5563]">
+                      <span className="font-semibold text-[#2d5a27]">Questions about insurance?</span>
+                      <br />
+                      Call us and we&apos;ll verify your coverage!
+                    </p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>

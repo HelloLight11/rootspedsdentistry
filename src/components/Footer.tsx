@@ -143,14 +143,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Map */}
+          {/* Office Hours & Map */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">Find Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Office Hours</h3>
+            <div className="space-y-1 text-sm text-white/70 mb-6">
+              <div className="flex justify-between">
+                <span>Mon - Thu</span>
+                <span>9:00 AM - 5:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Friday</span>
+                <span>9:00 AM - 2:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Sat - Sun</span>
+                <span>Closed</span>
+              </div>
+            </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.0!2d-118.46!3d34.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzAwLjAiTiAxMTjCsDI3JzM2LjAiVw!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4876!2d-118.4733!3d34.0467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb8c5c7a7a7d%3A0x5e5b5b5b5b5b5b5b!2s11620%20Wilshire%20Blvd%20%23720%2C%20Los%20Angeles%2C%20CA%2090025!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
-                height="150"
+                height="120"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"

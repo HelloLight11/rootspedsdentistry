@@ -83,10 +83,10 @@ export default function ServicePageTemplate({
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
-              <div className="relative">
+              <div className="relative sticky top-32">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <div
-                    className="w-full h-full bg-cover bg-center"
+                    className="w-full h-full bg-cover bg-top"
                     style={{ backgroundImage: `url("${imageUrl}")` }}
                   />
                 </div>

@@ -5,14 +5,6 @@ import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 import { motion } from 'framer-motion';
 
-const memberships = [
-  'American Academy of Pediatric Dentistry',
-  'California Society of Pediatric Dentistry',
-  'American Dental Association',
-  'California Dental Association',
-  'San Fernando Valley Dental Society',
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -79,21 +71,6 @@ export default function AboutPage() {
                     two while counting his patients&apos; teeth!
                   </p>
                 </div>
-              </AnimatedSection>
-
-              {/* Memberships */}
-              <AnimatedSection delay={0.2} className="mt-12">
-                <h3 className="text-xl font-serif font-bold text-[#1e293b] mb-6">
-                  Professional Memberships
-                </h3>
-                <ul className="space-y-3">
-                  {memberships.map((membership, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-[#2d5a27] rounded-full" />
-                      <span className="text-[#4b5563]">{membership}</span>
-                    </li>
-                  ))}
-                </ul>
               </AnimatedSection>
             </div>
 
