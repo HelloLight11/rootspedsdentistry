@@ -276,7 +276,7 @@ export default function Home() {
                 Dr. Joey Pedram
               </h2>
               <p className="text-[#4b5563] leading-relaxed mb-4">
-                Dr. Joey is a pediatric dentist with over 13 years of experience caring
+                Dr. Joey is a pediatric dentist with over 15 years of experience caring
                 for children&apos;s smiles. He received his dental degree from USC School of Dentistry
                 and completed his pediatric residency at Tufts University.
               </p>
@@ -295,7 +295,7 @@ export default function Home() {
                   <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  13+ Years Experience
+                  15+ Years Experience
                 </span>
                 <span className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
                   <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
