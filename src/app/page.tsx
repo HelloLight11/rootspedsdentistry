@@ -166,7 +166,7 @@ export default function Home() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Where Little <span className="text-[#478449]">Smiles</span> Take Root
+            Where Little Smiles Take Root
           </motion.h1>
 
           <motion.p
