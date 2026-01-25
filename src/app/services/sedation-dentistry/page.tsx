@@ -1,8 +1,22 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Sedation Dentistry | Roots Pediatric Dentistry',
-  description: 'Comfortable sedation options for children at Roots Pediatric Dentistry. Oral and IV sedation available for anxious patients.',
+export const metadata: Metadata = {
+  title: 'Pediatric Sedation Dentistry',
+  description:
+    'Safe sedation dentistry for kids in West Los Angeles. Nitrous oxide, oral & IV sedation options at Roots Pediatric Dentistry. Anxiety-free dental care. Call (310) 620-8181.',
+  keywords: [
+    'pediatric sedation dentistry Los Angeles',
+    'kids dental sedation',
+    'laughing gas dentist children',
+    'IV sedation pediatric dentist',
+    'anxious child dentist',
+    'oral sedation kids dentist',
+  ],
+  openGraph: {
+    title: 'Pediatric Sedation Dentistry | Roots Pediatric Dentistry',
+    description: 'Safe, comfortable sedation options for anxious children. Gentle care in West LA.',
+  },
 };
 
 export default function SedationDentistryPage() {

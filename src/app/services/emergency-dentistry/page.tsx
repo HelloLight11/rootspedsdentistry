@@ -1,8 +1,23 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Emergency Dentistry | Roots Pediatric Dentistry',
-  description: 'Urgent dental care for children at Roots Pediatric Dentistry. Toothaches, chipped teeth, and dental emergencies treated promptly.',
+export const metadata: Metadata = {
+  title: 'Pediatric Emergency Dentist',
+  description:
+    'Emergency pediatric dentist in West Los Angeles. Same-day appointments for toothaches, chipped teeth & dental trauma. Call Roots Pediatric Dentistry (310) 620-8181.',
+  keywords: [
+    'emergency pediatric dentist Los Angeles',
+    'kids emergency dentist',
+    'toothache child dentist',
+    'knocked out tooth child',
+    'chipped tooth kid',
+    'urgent dental care children',
+    'same day pediatric dentist',
+  ],
+  openGraph: {
+    title: 'Pediatric Emergency Dentist | Roots Pediatric Dentistry',
+    description: 'Same-day emergency dental care for children. Call (310) 620-8181 now.',
+  },
 };
 
 export default function EmergencyDentistryPage() {

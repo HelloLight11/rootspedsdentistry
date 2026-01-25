@@ -1,8 +1,22 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Special Needs Dentistry | Roots Pediatric Dentistry',
-  description: 'Compassionate dental care for children with special needs at Roots Pediatric Dentistry in Los Angeles.',
+export const metadata: Metadata = {
+  title: 'Special Needs Dentistry for Children',
+  description:
+    'Compassionate dental care for special needs children in West Los Angeles. Autism, Down syndrome, sensory-friendly care at Roots Pediatric Dentistry. Call (310) 620-8181.',
+  keywords: [
+    'special needs dentist Los Angeles',
+    'autism dentist children',
+    'sensory friendly dentist',
+    'Down syndrome dental care',
+    'special healthcare needs dentist',
+    'disability dentist kids',
+  ],
+  openGraph: {
+    title: 'Special Needs Dentistry | Roots Pediatric Dentistry',
+    description: 'Compassionate, individualized dental care for children with special needs.',
+  },
 };
 
 export default function SpecialNeedsDentistryPage() {

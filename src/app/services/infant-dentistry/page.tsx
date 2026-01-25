@@ -1,8 +1,22 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Infant Dentistry / Peekaboo Exam | Roots Pediatric Dentistry',
-  description: 'Specialized dental care for infants and toddlers at Roots Pediatric Dentistry. Our Peekaboo Exam makes early dental visits fun!',
+export const metadata: Metadata = {
+  title: 'Infant Dentistry & Peekaboo Exam',
+  description:
+    'Gentle infant dentistry and Peekaboo Exams for babies in West Los Angeles. Start your child\'s dental care early with Dr. Joey at Roots Pediatric Dentistry. Call (310) 620-8181.',
+  keywords: [
+    'infant dentist Los Angeles',
+    'baby dentist',
+    'peekaboo dental exam',
+    'toddler dental care',
+    'first tooth dentist',
+    'baby dental checkup',
+  ],
+  openGraph: {
+    title: 'Infant Dentistry & Peekaboo Exam | Roots Pediatric Dentistry',
+    description: 'Gentle dental care for infants and toddlers. Start healthy habits early!',
+  },
 };
 
 export default function InfantDentistryPage() {

@@ -1,8 +1,21 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'First Visit | Roots Pediatric Dentistry',
-  description: 'Make your child\'s first dental visit a positive experience at Roots Pediatric Dentistry in Los Angeles.',
+export const metadata: Metadata = {
+  title: 'First Dental Visit for Kids',
+  description:
+    'Make your child\'s first dental visit positive and fun at Roots Pediatric Dentistry in West Los Angeles. Dr. Joey specializes in gentle first-time dental experiences. Call (310) 620-8181.',
+  keywords: [
+    'first dental visit child',
+    'baby first dentist appointment',
+    'toddler dentist Los Angeles',
+    'when to take child to dentist',
+    'pediatric dental exam',
+  ],
+  openGraph: {
+    title: 'First Dental Visit for Kids | Roots Pediatric Dentistry',
+    description: 'Make your child\'s first dental visit positive and fun. Expert pediatric care in West LA.',
+  },
 };
 
 export default function FirstVisitPage() {

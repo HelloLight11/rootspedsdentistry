@@ -1,8 +1,22 @@
 import ServicePageTemplate from '@/components/ServicePageTemplate';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Preventative Care | Roots Pediatric Dentistry',
-  description: 'Regular dental check-ups and cleanings for kids at Roots Pediatric Dentistry. Keep your child\'s smile healthy and bright!',
+export const metadata: Metadata = {
+  title: 'Preventative Dental Care for Kids',
+  description:
+    'Kids dental cleanings, fluoride treatments & sealants in West Los Angeles. Preventative care at Roots Pediatric Dentistry keeps your child\'s smile healthy. Call (310) 620-8181.',
+  keywords: [
+    'kids dental cleaning Los Angeles',
+    'pediatric dental checkup',
+    'fluoride treatment children',
+    'dental sealants kids',
+    'preventative dentistry children',
+    'child teeth cleaning',
+  ],
+  openGraph: {
+    title: 'Preventative Dental Care for Kids | Roots Pediatric Dentistry',
+    description: 'Regular cleanings, fluoride & sealants to keep your child\'s smile healthy.',
+  },
 };
 
 export default function PreventativeCarePage() {
