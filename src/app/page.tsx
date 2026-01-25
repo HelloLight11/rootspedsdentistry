@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
-import KidsAnimations from '@/components/KidsAnimations';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -148,9 +147,6 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
         </div>
-
-        {/* Kids Animations */}
-        <KidsAnimations />
 
         {/* Hero Content - Centered */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
