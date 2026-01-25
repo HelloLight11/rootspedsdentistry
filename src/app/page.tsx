@@ -355,10 +355,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
-              See What Makes Us Special
+              Happy Smiles, Happy Kids
             </h2>
             <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
-              A peek inside our kid-friendly office where every visit is an adventure.
+              Dr. Joey loves making every dental visit a positive experience.
             </p>
           </AnimatedSection>
 
