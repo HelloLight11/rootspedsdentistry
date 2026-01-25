@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const services = [
@@ -31,45 +32,29 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-white shadow-md py-2'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div
-              className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
-                isScrolled
-                  ? 'bg-[#2d5a27]'
-                  : 'bg-white/20 backdrop-blur-sm border border-white/30'
-              }`}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                className={`w-7 h-7 transition-colors duration-300 ${
-                  isScrolled ? 'text-white' : 'text-white'
-                }`}
-                fill="currentColor"
-              >
-                <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.5-.5 1.1-.5 1.8 0 1.5 1 2.8 2.4 3.2-.2.4-.2.8-.2 1.3 0 1.7 1.3 3 3 3s3-1.3 3-3c0-.5-.1-.9-.2-1.3 1.4-.4 2.4-1.7 2.4-3.2 0-.7-.2-1.3-.5-1.8 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2zm0 2c1.4 0 2.5 1.1 2.5 2.5S13.4 9 12 9 9.5 7.9 9.5 6.5 10.6 4 12 4z" />
-              </svg>
-            </div>
-            <span
-              className={`text-xl font-serif font-semibold transition-colors duration-300 hidden sm:block ${
-                isScrolled ? 'text-[#2d5a27]' : 'text-white'
-              }`}
-            >
-              Roots Pediatric Dentistry
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="Roots Pediatric Dentistry"
+              width={isScrolled ? 60 : 75}
+              height={isScrolled ? 60 : 75}
+              className="transition-all duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className={`font-medium transition-colors duration-300 hover:text-[#478449] ${
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
                 isScrolled ? 'text-[#3d2f24]' : 'text-white'
               }`}
             >
@@ -77,7 +62,7 @@ export default function Header() {
             </Link>
             <Link
               href="/about"
-              className={`font-medium transition-colors duration-300 hover:text-[#478449] ${
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
                 isScrolled ? 'text-[#3d2f24]' : 'text-white'
               }`}
             >
@@ -91,7 +76,7 @@ export default function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className={`font-medium transition-colors duration-300 hover:text-[#478449] flex items-center gap-1 ${
+                className={`font-medium transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
                   isScrolled ? 'text-[#3d2f24]' : 'text-white'
                 }`}
               >
@@ -127,7 +112,7 @@ export default function Header() {
                         <Link
                           key={service.href}
                           href={service.href}
-                          className="block px-4 py-3 text-[#3d2f24] hover:bg-[#f5f0e8] hover:text-[#2d5a27] transition-colors duration-200"
+                          className="block px-4 py-3 text-[#3d2f24] hover:bg-[#b8f5a6]/30 hover:text-[#2d5a27] transition-colors duration-200"
                         >
                           {service.name}
                         </Link>
@@ -140,7 +125,7 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className={`font-medium transition-colors duration-300 hover:text-[#478449] ${
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
                 isScrolled ? 'text-[#3d2f24]' : 'text-white'
               }`}
             >
@@ -149,9 +134,13 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="bg-[#2d5a27] hover:bg-[#478449] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
+                isScrolled
+                  ? 'bg-[#2d5a27] text-white hover:bg-[#478449]'
+                  : 'bg-[#b8f5a6] text-[#2d5a27] hover:bg-white'
+              }`}
             >
-              Book an Appointment
+              Book Appointment
             </Link>
           </nav>
 
@@ -201,27 +190,27 @@ export default function Header() {
             <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#f5f0e8] rounded-lg transition-colors"
+                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#f5f0e8] rounded-lg transition-colors"
+                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
               </Link>
               <div className="py-2">
-                <p className="px-4 py-2 text-sm font-semibold text-[#595351] uppercase tracking-wider">
+                <p className="px-4 py-2 text-sm font-semibold text-[#2d5a27] uppercase tracking-wider">
                   Services
                 </p>
                 {services.map((service) => (
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block py-2 px-6 text-[#3d2f24] hover:bg-[#f5f0e8] rounded-lg transition-colors text-sm"
+                    className="block py-2 px-6 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors text-sm"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.name}
@@ -230,17 +219,17 @@ export default function Header() {
               </div>
               <Link
                 href="/contact"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#f5f0e8] rounded-lg transition-colors"
+                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link
                 href="/contact"
-                className="block py-3 px-4 bg-[#2d5a27] text-white text-center rounded-lg font-medium hover:bg-[#478449] transition-colors"
+                className="block py-3 px-4 bg-[#2d5a27] text-white text-center rounded-full font-semibold hover:bg-[#478449] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Book an Appointment
+                Book Appointment
               </Link>
             </div>
           </motion.div>
