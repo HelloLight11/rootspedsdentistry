@@ -67,7 +67,7 @@ function PhotoScroll() {
 
   return (
     <div className="relative">
-      <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative aspect-[4/3] md:aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl bg-[#f1f5f9]">
         {photoScrollImages.map((src, index) => (
           <motion.div
             key={src}
@@ -83,7 +83,7 @@ function PhotoScroll() {
               src={src}
               alt={`Happy patients at Roots Pediatric Dentistry ${index + 1}`}
               fill
-              className="object-cover object-top"
+              className="object-contain"
               priority={index === 0}
             />
           </motion.div>
