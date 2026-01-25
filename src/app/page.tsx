@@ -308,7 +308,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-[#a8e6cf] text-lg md:text-xl font-medium mb-4 tracking-wide"
           >
-            Pediatric Dentistry in West Los Angeles
+            Welcome to Roots Pediatric Dentistry
           </motion.p>
 
           <motion.h1
