@@ -83,7 +83,7 @@ function PhotoScroll() {
               src={src}
               alt={`Happy patients at Roots Pediatric Dentistry ${index + 1}`}
               fill
-              className="object-cover"
+              className="object-cover object-top"
               priority={index === 0}
             />
           </motion.div>
@@ -105,7 +105,7 @@ function PhotoScroll() {
               src={src}
               alt={`Thumbnail ${index + 1}`}
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </button>
         ))}
