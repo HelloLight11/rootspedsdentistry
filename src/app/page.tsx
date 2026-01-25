@@ -154,7 +154,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-block bg-white/20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/30"
+            className="inline-block bg-white/90 backdrop-blur-sm text-[#2d5a27] px-5 py-2 rounded-full text-sm font-semibold mb-6"
           >
             Welcome to Roots Pediatric Dentistry
           </motion.span>
