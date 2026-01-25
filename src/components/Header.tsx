@@ -54,13 +54,13 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
+              className="font-medium text-[#1e293b] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
+              className="font-medium text-[#1e293b] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               About
             </Link>
@@ -72,7 +72,7 @@ export default function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className="font-medium text-[#3d2f24] transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
+                className="font-medium text-[#1e293b] transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
               >
                 Services
                 <svg
@@ -106,7 +106,7 @@ export default function Header() {
                         <Link
                           key={service.href}
                           href={service.href}
-                          className="block px-4 py-3 text-[#3d2f24] hover:bg-[#b8f5a6]/30 hover:text-[#2d5a27] transition-colors duration-200"
+                          className="block px-4 py-3 text-[#1e293b] hover:bg-[#b8f5a6]/30 hover:text-[#2d5a27] transition-colors duration-200"
                         >
                           {service.name}
                         </Link>
@@ -119,7 +119,7 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
+              className="font-medium text-[#1e293b] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               Contact
             </Link>
@@ -142,7 +142,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg transition-colors duration-300 text-[#3d2f24]"
+            className="lg:hidden p-2 rounded-lg transition-colors duration-300 text-[#1e293b]"
           >
             <svg
               className="w-6 h-6"
@@ -183,14 +183,14 @@ export default function Header() {
             <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
@@ -203,7 +203,7 @@ export default function Header() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block py-2 px-6 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors text-sm"
+                    className="block py-2 px-6 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors text-sm"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.name}
@@ -212,7 +212,7 @@ export default function Header() {
               </div>
               <Link
                 href="/contact"
-                className="block py-3 px-4 text-[#3d2f24] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact

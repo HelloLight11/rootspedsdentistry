@@ -41,14 +41,14 @@ export default function AboutPage() {
             <div>
               <AnimatedSection>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-[#595351] leading-relaxed mb-6">
+                  <p className="text-[#4b5563] leading-relaxed mb-6">
                     Dr. Joey grew up in Calabasas, CA. He completed his undergraduate studies
                     at UCLA, receiving his Bachelor of Science in Psychobiology. He went on to
                     earn his Doctor of Dental Surgery (DDS) degree from the University of
                     Southern California School of Dentistry.
                   </p>
 
-                  <p className="text-[#595351] leading-relaxed mb-6">
+                  <p className="text-[#4b5563] leading-relaxed mb-6">
                     After receiving his DDS degree, Dr. Joey completed a residency in Pediatric
                     Dentistry at Tufts University in Boston, MA. He has been a pediatric
                     dentist since 2011. Dr. Joey is currently a member of the American Academy
@@ -57,21 +57,21 @@ export default function AboutPage() {
                     Dental Society.
                   </p>
 
-                  <p className="text-[#595351] leading-relaxed mb-6">
+                  <p className="text-[#4b5563] leading-relaxed mb-6">
                     He is a proud world traveler whose most recent trips include Argentina,
                     Brazil, Italy and Turks and Caicos. Recently, while abroad in Vietnam,
                     Dr. Joey volunteered at a pediatric dentistry clinic for indigent Vietnamese
                     children.
                   </p>
 
-                  <p className="text-[#595351] leading-relaxed mb-6">
+                  <p className="text-[#4b5563] leading-relaxed mb-6">
                     Aside from dentistry, Dr. Joey and his wife Tyna, who is an optometrist,
                     have three rambunctious fun-loving boys, Remy, Myles, and Perry. On weekends,
                     they like to take the boys to the beach and are always up for an adventure.
                     Dr. Joey also is involved in coaching his boys&apos; basketball and soccer teams.
                   </p>
 
-                  <p className="text-[#595351] leading-relaxed">
+                  <p className="text-[#4b5563] leading-relaxed">
                     Dr. Joey prides himself on always being positive and patient with all the
                     little ones he works with and is known for putting a smile on his patients&apos;
                     faces with his playful sense of humor. You might catch him singing a song or
@@ -82,14 +82,14 @@ export default function AboutPage() {
 
               {/* Memberships */}
               <AnimatedSection delay={0.2} className="mt-12">
-                <h3 className="text-xl font-serif font-bold text-[#3d2f24] mb-6">
+                <h3 className="text-xl font-serif font-bold text-[#1e293b] mb-6">
                   Professional Memberships
                 </h3>
                 <ul className="space-y-3">
                   {memberships.map((membership, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-[#2d5a27] rounded-full" />
-                      <span className="text-[#595351]">{membership}</span>
+                      <span className="text-[#4b5563]">{membership}</span>
                     </li>
                   ))}
                 </ul>
@@ -136,7 +136,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#3d2f24]">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1e293b]">
               Education & Training
             </h2>
           </AnimatedSection>
@@ -145,7 +145,7 @@ export default function AboutPage() {
             {[
               {
                 year: '2011 - Present',
-                title: 'Board Certified Pediatric Dentist',
+                title: 'Pediatric Dentist',
                 description: 'Practicing pediatric dentistry with dedication and care',
               },
               {
@@ -171,8 +171,8 @@ export default function AboutPage() {
                   </div>
                   <div className="relative pb-8 border-l-2 border-[#b8f5a6] pl-8">
                     <div className="absolute left-0 top-0 w-4 h-4 bg-[#2d5a27] rounded-full -translate-x-[9px]" />
-                    <h3 className="text-lg font-semibold text-[#3d2f24] mb-1">{item.title}</h3>
-                    <p className="text-[#595351]">{item.description}</p>
+                    <h3 className="text-lg font-semibold text-[#1e293b] mb-1">{item.title}</h3>
+                    <p className="text-[#4b5563]">{item.description}</p>
                   </div>
                 </div>
               </AnimatedSection>

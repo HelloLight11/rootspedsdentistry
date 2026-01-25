@@ -83,10 +83,10 @@ export default function ServicesPage() {
                 <Link href={service.href} className="block h-full">
                   <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full flex flex-col group">
                     <div className="text-4xl mb-4">{service.icon}</div>
-                    <h3 className="text-xl font-serif font-bold text-[#3d2f24] mb-3 group-hover:text-[#2d5a27] transition-colors">
+                    <h3 className="text-xl font-serif font-bold text-[#1e293b] mb-3 group-hover:text-[#2d5a27] transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-[#595351] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[#4b5563] leading-relaxed mb-6 flex-grow">
                       {service.description}
                     </p>
                     <div className="flex items-center gap-2 text-[#2d5a27] font-medium group-hover:gap-4 transition-all duration-300">

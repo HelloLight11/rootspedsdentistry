@@ -3,17 +3,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #3d2f24;
+  --foreground: #1e293b;
   --primary-green: #2d5a27;
   --primary-green-light: #478449;
-  --primary-green-lighter: #b8f5a6;
+  --primary-green-lighter: #a8e6cf;
+  --accent-mint: #a8e6cf;
   --accent-coral: #e8856c;
   --accent-coral-light: #ffa797;
-  --cream: #faf8f5;
-  --cream-dark: #f5f0e8;
-  --text-brown: #3d2f24;
-  --text-brown-light: #595351;
-  --footer-blue: #527fb2;
+  --cream: #f8fafc;
+  --cream-dark: #f1f5f9;
+  --text-dark: #1e293b;
+  --text-muted: #4b5563;
+  --footer-blue: #3d4f5f;
 }
 
 @theme inline {
@@ -42,7 +43,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fraunces', serif;
-  color: var(--text-brown);
+  color: var(--text-dark);
 }
 
 /* Custom scrollbar */

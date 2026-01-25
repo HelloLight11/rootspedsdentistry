@@ -154,7 +154,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-block bg-[#f3c852] text-[#2d5a27] px-5 py-2 rounded-full text-sm font-semibold mb-6"
+            className="inline-block bg-white/20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/30"
           >
             Welcome to Roots Pediatric Dentistry
           </motion.span>
@@ -166,7 +166,7 @@ export default function Home() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Where Little <span className="text-[#f3c852]">Smiles</span> Take Root
+            Where Little <span className="text-[#a8e6cf]">Smiles</span> Take Root
           </motion.h1>
 
           <motion.p
@@ -175,7 +175,7 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            Board certified pediatric dentist Dr. Joey Pedram and our caring team are dedicated to providing
+            Pediatric dentist Dr. Joey Pedram and our caring team are dedicated to providing
             exceptional dental care for infants, children, and teens in a fun, comfortable environment.
           </motion.p>
 
@@ -187,7 +187,7 @@ export default function Home() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#f3c852] text-[#2d5a27] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#2d5a27] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#a8e6cf] transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               Book Appointment
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -236,10 +236,10 @@ export default function Home() {
             <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
               Our Practice
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3d2f24] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
               Comprehensive Pediatric Dental Care
             </h2>
-            <p className="text-lg text-[#595351] max-w-2xl mx-auto">
+            <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
               From first tooth to teen years, we provide complete dental care tailored to your child&apos;s unique needs.
             </p>
           </AnimatedSection>
@@ -257,10 +257,10 @@ export default function Home() {
             <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
               Our Services
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3d2f24] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
               What We Offer
             </h2>
-            <p className="text-lg text-[#595351] max-w-2xl mx-auto">
+            <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
               Quality dental care designed specifically for children in a warm, welcoming environment.
             </p>
           </AnimatedSection>
@@ -279,10 +279,10 @@ export default function Home() {
                         <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.5-.5 1.1-.5 1.8 0 1.5 1 2.8 2.4 3.2-.2.4-.2.8-.2 1.3 0 1.7 1.3 3 3 3s3-1.3 3-3c0-.5-.1-.9-.2-1.3 1.4-.4 2.4-1.7 2.4-3.2 0-.7-.2-1.3-.5-1.8 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-[#3d2f24] mb-3">
+                    <h3 className="text-xl font-bold text-[#1e293b] mb-3">
                       {service.title}
                     </h3>
-                    <p className="text-[#595351] leading-relaxed">
+                    <p className="text-[#4b5563] leading-relaxed">
                       {service.description}
                     </p>
                   </div>
@@ -324,32 +324,32 @@ export default function Home() {
               <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
                 Meet Your Dentist
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#3d2f24] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-6">
                 Dr. Joey Pedram
               </h2>
-              <p className="text-[#595351] leading-relaxed mb-4">
-                Dr. Joey is a board certified pediatric dentist with over 13 years of experience caring
+              <p className="text-[#4b5563] leading-relaxed mb-4">
+                Dr. Joey is a pediatric dentist with over 13 years of experience caring
                 for children&apos;s smiles. He received his dental degree from USC School of Dentistry
                 and completed his pediatric residency at Tufts University.
               </p>
-              <p className="text-[#595351] leading-relaxed mb-6">
+              <p className="text-[#4b5563] leading-relaxed mb-6">
                 His gentle approach and genuine love for working with children make every visit
                 a positive experience. You might even catch him singing a song while counting teeth!
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="inline-flex items-center gap-2 bg-[#f8f9fc] px-4 py-2 rounded-full text-sm font-medium text-[#3d2f24]">
+                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
                   <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  Board Certified
+                  Pediatric Specialist
                 </span>
-                <span className="inline-flex items-center gap-2 bg-[#f8f9fc] px-4 py-2 rounded-full text-sm font-medium text-[#3d2f24]">
+                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
                   <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   13+ Years Experience
                 </span>
-                <span className="inline-flex items-center gap-2 bg-[#f8f9fc] px-4 py-2 rounded-full text-sm font-medium text-[#3d2f24]">
+                <span className="inline-flex items-center gap-2 bg-[#f1f5f9] px-4 py-2 rounded-full text-sm font-medium text-[#334155]">
                   <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -374,10 +374,10 @@ export default function Home() {
             <span className="inline-block bg-[#b8f5a6]/30 text-[#2d5a27] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
               Patient Reviews
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#3d2f24] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
               What Parents Are Saying
             </h2>
-            <p className="text-lg text-[#595351]">
+            <p className="text-lg text-[#4b5563]">
               Don&apos;t just take our word for it - hear from families who trust us with their children&apos;s smiles.
             </p>
           </AnimatedSection>
@@ -398,12 +398,12 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-[#595351] leading-relaxed mb-6 flex-grow italic">
+                  <p className="text-[#4b5563] leading-relaxed mb-6 flex-grow italic">
                     &ldquo;{testimonial.text}&rdquo;
                   </p>
                   <div>
-                    <p className="font-semibold text-[#3d2f24]">{testimonial.name}</p>
-                    <p className="text-sm text-[#595351]">Parent</p>
+                    <p className="font-semibold text-[#1e293b]">{testimonial.name}</p>
+                    <p className="text-sm text-[#4b5563]">Parent</p>
                   </div>
                 </div>
               </AnimatedSection>
