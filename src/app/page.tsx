@@ -422,9 +422,9 @@ export default function Home() {
                       <svg
                         className="w-7 h-7 text-white"
                         fill="currentColor"
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 32 32"
                       >
-                        <path d="M12 2C9.24 2 7 4.24 7 7c0 1.53.69 2.9 1.77 3.83-.23.59-.41 1.21-.53 1.84L7.5 22h3l.5-4h2l.5 4h3l-.74-9.33c-.12-.63-.3-1.25-.53-1.84A4.98 4.98 0 0017 7c0-2.76-2.24-5-5-5z" />
+                        <path d="M16 2c-3.3 0-6.1 1.2-8 3.2C6.1 3.2 4.5 2.5 2.8 2.5c-1 0-1.8.8-1.8 1.8 0 2.5 1.5 4.7 3.7 5.7-.4 1.2-.7 2.5-.7 3.9 0 1.8.4 3.5 1 5l2 8.6c.2.8.9 1.5 1.8 1.5h2.4c.9 0 1.6-.6 1.8-1.5l1-4h6l1 4c.2.8.9 1.5 1.8 1.5h2.4c.9 0 1.6-.6 1.8-1.5l2-8.6c.6-1.5 1-3.2 1-5 0-1.4-.2-2.7-.7-3.9 2.2-1 3.7-3.2 3.7-5.7 0-1-.8-1.8-1.8-1.8-1.7 0-3.3.7-5.2 2.7-1.9-2-4.7-3.2-8-3.2zm0 3c2.5 0 4.8 1 6.3 2.7.3.3.7.5 1.1.5.4 0 .8-.1 1.1-.4 1.2-1.2 2.3-1.8 3.2-1.8-.3 1.2-1.2 2.2-2.4 2.7-.6.3-1 .9-1 1.6 0 .3.1.7.2 1 .4 1 .5 2.1.5 3.2 0 1.4-.3 2.7-.8 3.9l-1.8 7.6h-1.2l-1.2-5c-.2-.7-.8-1.2-1.5-1.2h-7.2c-.7 0-1.3.5-1.5 1.2l-1.2 5H7.4l-1.8-7.6c-.5-1.2-.8-2.5-.8-3.9 0-1.1.2-2.2.5-3.2.1-.3.2-.6.2-1 0-.7-.4-1.3-1-1.6-1.2-.5-2.1-1.5-2.4-2.7.9 0 2 .6 3.2 1.8.3.3.7.4 1.1.4.4 0 .8-.2 1.1-.5C9.2 6 11.5 5 14 5h2z" />
                       </svg>
                     </div>
                     <h3 className="text-lg font-bold text-[#1e293b] mb-2 group-hover:text-[#2d5a27] transition-colors">
@@ -559,7 +559,11 @@ export default function Home() {
                       <span className="font-medium">9:00 AM - 2:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Saturday - Sunday</span>
+                      <span>Saturday</span>
+                      <span className="font-medium">9:00 AM - 2:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Sunday</span>
                       <span className="font-medium">Closed</span>
                     </div>
                   </div>
