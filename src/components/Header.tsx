@@ -30,10 +30,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
         isScrolled
-          ? 'bg-white shadow-md py-2'
-          : 'bg-transparent py-4'
+          ? 'shadow-md py-2'
+          : 'shadow-sm py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,17 +54,13 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
-                isScrolled ? 'text-[#3d2f24]' : 'text-white'
-              }`}
+              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
-                isScrolled ? 'text-[#3d2f24]' : 'text-white'
-              }`}
+              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               About
             </Link>
@@ -76,9 +72,7 @@ export default function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className={`font-medium transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
-                  isScrolled ? 'text-[#3d2f24]' : 'text-white'
-                }`}
+                className="font-medium text-[#3d2f24] transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
               >
                 Services
                 <svg
@@ -125,31 +119,30 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full ${
-                isScrolled ? 'text-[#3d2f24]' : 'text-white'
-              }`}
+              className="font-medium text-[#3d2f24] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#2d5a27] after:transition-all after:duration-300 hover:after:w-full hover:text-[#2d5a27]"
             >
               Contact
             </Link>
 
             <Link
               href="/contact"
-              className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
-                isScrolled
-                  ? 'bg-[#2d5a27] text-white hover:bg-[#478449]'
-                  : 'bg-[#b8f5a6] text-[#2d5a27] hover:bg-white'
-              }`}
+              className="px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 bg-[#b8f5a6] text-[#2d5a27] hover:bg-[#2d5a27] hover:text-white"
             >
               Book Appointment
             </Link>
+
+            <a
+              href="tel:+13106208181"
+              className="px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 bg-[#2d5a27] text-white hover:bg-[#478449]"
+            >
+              (310) 620-8181
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors duration-300 ${
-              isScrolled ? 'text-[#3d2f24]' : 'text-white'
-            }`}
+            className="lg:hidden p-2 rounded-lg transition-colors duration-300 text-[#3d2f24]"
           >
             <svg
               className="w-6 h-6"
