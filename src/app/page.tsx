@@ -170,13 +170,13 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
         <div className="absolute inset-0">
           <Image
             src="/images/heroimage.jpeg"
             alt="Happy children smiling"
             fill
-            className="object-cover object-[center_20%] md:object-top"
+            className="object-cover object-[center_30%] sm:object-[center_20%] md:object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
