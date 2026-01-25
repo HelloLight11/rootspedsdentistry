@@ -39,22 +39,16 @@ export default function AccessibilityWidget() {
       {/* Accessibility Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 left-6 z-50 w-14 h-14 bg-[#2d5a27] text-white rounded-full shadow-lg hover:bg-[#478449] transition-all duration-300 flex items-center justify-center"
+        className="fixed bottom-6 left-6 z-50 w-11 h-11 bg-[#2d5a27] text-white rounded-full shadow-lg hover:bg-[#478449] transition-all duration-300 flex items-center justify-center"
         aria-label="Accessibility Options"
         title="Accessibility Options"
       >
         <svg
-          className="w-7 h-7"
-          fill="none"
-          stroke="currentColor"
+          className="w-6 h-6"
+          fill="currentColor"
           viewBox="0 0 24 24"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
-          />
+          <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9H15V22H13V16H11V22H9V9H3V7H21V9Z" />
         </svg>
       </button>
 
