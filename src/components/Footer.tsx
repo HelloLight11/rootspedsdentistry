@@ -14,7 +14,6 @@ export default function Footer() {
                 alt="Roots Pediatric Dentistry"
                 width={180}
                 height={80}
-                className="brightness-0 invert"
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
