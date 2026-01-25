@@ -23,7 +23,7 @@ export default function FirstVisitPage() {
         'Discussion of oral hygiene habits and nutrition',
         'Answers to all your questions about your child\'s dental health',
       ]}
-      imageUrl="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070"
+      imageUrl="/images/FirstVisit.jpeg"
     />
   );
 }
