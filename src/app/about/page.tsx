@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 import { motion } from 'framer-motion';
 
@@ -96,38 +97,20 @@ export default function AboutPage() {
               </AnimatedSection>
             </div>
 
-            {/* Images */}
-            <div className="space-y-8">
-              <AnimatedSection direction="right">
-                <div className="relative">
-                  <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                    <div
-                      className="w-full h-full bg-cover bg-center"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070")',
-                      }}
-                    />
-                  </div>
-                  <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#b8f5a6] rounded-xl -z-10" />
+            {/* Image */}
+            <AnimatedSection direction="right">
+              <div className="relative">
+                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/drjoey-photo.jpg"
+                    alt="Dr. Joey Pedram"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </AnimatedSection>
-
-              <AnimatedSection direction="right" delay={0.2}>
-                <div className="relative">
-                  <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-xl">
-                    <div
-                      className="w-full h-full bg-cover bg-center"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1609220136736-443140cffec6?q=80&w=2070")',
-                      }}
-                    />
-                  </div>
-                  <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-[#ffa797] rounded-full -z-10" />
-                </div>
-              </AnimatedSection>
-            </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#b8f5a6] rounded-xl -z-10" />
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
