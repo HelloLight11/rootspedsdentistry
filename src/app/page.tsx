@@ -142,7 +142,7 @@ export default function Home() {
             src="/images/heroimage.jpeg"
             alt="Happy children smiling"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
