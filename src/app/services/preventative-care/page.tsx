@@ -23,7 +23,7 @@ export default function PreventativeCarePage() {
         'Dental sealants to protect molars',
         'Personalized oral hygiene instruction',
       ]}
-      imageUrl="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074"
+      imageUrl="/images/PreventativeCare.jpeg"
     />
   );
 }
