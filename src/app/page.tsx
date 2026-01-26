@@ -261,32 +261,23 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
-        {/* Floating Trees Animation */}
+        {/* Sparkles Animation */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5]">
-          {/* Tree 1 */}
-          <div className="absolute top-[20%] text-4xl md:text-5xl opacity-60 float-tree-1">
-            🌳
-          </div>
-          {/* Tree 2 */}
-          <div className="absolute top-[65%] text-4xl md:text-5xl opacity-60 float-tree-2">
-            🌲
-          </div>
-          {/* Leaf 1 - spinning */}
-          <div className="absolute top-[35%] text-2xl md:text-3xl opacity-70 float-leaf-1">
-            🍃
-          </div>
-          {/* Leaf 2 - spinning */}
-          <div className="absolute top-[75%] text-2xl md:text-3xl opacity-70 float-leaf-2">
-            🍀
-          </div>
-          {/* Flower 1 */}
-          <div className="absolute top-[50%] text-3xl opacity-60 float-flower-1">
-            🌸
-          </div>
-          {/* Flower 2 */}
-          <div className="absolute top-[25%] text-3xl opacity-60 float-flower-2">
-            🌷
-          </div>
+          <div className="sparkle sparkle-1"></div>
+          <div className="sparkle sparkle-sm sparkle-2"></div>
+          <div className="sparkle sparkle-lg sparkle-3"></div>
+          <div className="sparkle sparkle-4"></div>
+          <div className="sparkle sparkle-sm sparkle-5"></div>
+          <div className="sparkle sparkle-6"></div>
+          <div className="sparkle sparkle-lg sparkle-7"></div>
+          <div className="sparkle sparkle-sm sparkle-8"></div>
+          <div className="sparkle sparkle-9"></div>
+          <div className="sparkle sparkle-lg sparkle-10"></div>
+          <div className="sparkle sparkle-sm sparkle-11"></div>
+          <div className="sparkle sparkle-12"></div>
+          <div className="sparkle sparkle-sm sparkle-13"></div>
+          <div className="sparkle sparkle-lg sparkle-14"></div>
+          <div className="sparkle sparkle-15"></div>
         </div>
 
         {/* Title at top */}
