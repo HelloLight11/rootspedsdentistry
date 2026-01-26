@@ -355,7 +355,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white text-center italic">
-              &ldquo;Rooted in care, blooming in smiles&rdquo;
+              Rooted in care, blooming in smiles
             </p>
           </AnimatedSection>
         </div>
@@ -367,16 +367,7 @@ export default function Home() {
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#2d5a27]/5 rounded-full" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
-              Happy Smiles, Happy Kids
-            </h2>
-            <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
-              Dr. Joey loves making every dental visit a positive experience.
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
+          <AnimatedSection>
             <PhotoScroll />
           </AnimatedSection>
         </div>
