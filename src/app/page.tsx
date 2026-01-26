@@ -322,7 +322,7 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-xl md:text-2xl text-white/90 font-medium mb-6"
           >
-            Planting Seeds for Lifelong <span className="text-[#7dffb3]">Smiles</span>
+            Planting Seeds for Lifelong <span className="text-white">Smiles</span>
           </motion.p>
 
           <motion.div
