@@ -261,18 +261,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
-        {/* Floating Stars */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5]">
-          <div className="floating-star star-1">★</div>
-          <div className="floating-star star-2">★</div>
-          <div className="floating-star star-3">★</div>
-          <div className="floating-star star-4">★</div>
-          <div className="floating-star star-5">★</div>
-          <div className="floating-star star-6">★</div>
-          <div className="floating-star star-7">★</div>
-          <div className="floating-star star-8">★</div>
-        </div>
-
         {/* Title at top */}
         <div className="relative z-10 text-center px-4 mx-auto">
           <motion.div
