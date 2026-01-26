@@ -325,27 +325,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome/Philosophy Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#b8f5a6]/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#a8e6cf]/20 rounded-full blur-3xl" />
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+      {/* Welcome Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="inline-flex items-center gap-2 bg-[#2d5a27]/10 px-4 py-2 rounded-full mb-6">
-              <span className="w-2 h-2 bg-[#2d5a27] rounded-full"></span>
-              <span className="text-[#2d5a27] font-medium text-sm">Our Philosophy</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1e293b] mb-6 leading-tight">
-              Building Positive Relationships<br />
-              <span className="text-[#2d5a27]">With Dental Care</span>
+            {/* Small tagline */}
+            <p className="text-center text-[#3d2f24] text-sm md:text-base tracking-[0.2em] uppercase font-medium mb-6">
+              WHERE SMILES TAKE ROOT
+            </p>
+
+            {/* Main heading */}
+            <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#3d2f24] mb-6 font-[family-name:var(--font-jost)]">
+              Welcome to Roots Pediatric Dentistry
             </h2>
-            <p className="text-lg md:text-xl text-[#4b5563] leading-relaxed max-w-3xl mx-auto">
-              At Roots Pediatric Dentistry, we believe that a child&apos;s first dental experiences
-              shape their attitude toward oral health for life. That&apos;s why we&apos;ve created a
-              warm, welcoming environment where children feel safe, parents feel informed, and
-              everyone leaves with a smile.
+
+            {/* Green underline */}
+            <div className="w-full max-w-4xl mx-auto h-1 bg-[#2d5a27] mb-10"></div>
+
+            {/* Description paragraph */}
+            <p className="text-[#4b5563] text-base md:text-lg leading-relaxed max-w-5xl mx-auto">
+              At Roots Pediatric Dentistry, we&apos;re dedicated to making dental visits a joyful experience for kids and parents alike! Under the expertise of Pediatric Dentist Dr. Joey Pedram, our practice focuses on delivering innovative, gentle care for children of all ages. Embracing advanced technology, and tailored treatments, we strive to help every young smile sparkle brightly. We&apos;re excited to welcome you and your child to our caring community soon!
             </p>
           </AnimatedSection>
         </div>
