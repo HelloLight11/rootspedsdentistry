@@ -1,9 +1,16 @@
 import type { Metadata } from 'next';
+import { Jost } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AccessibilityWidget from '@/components/AccessibilityWidget';
 import Script from 'next/script';
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-jost',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rootspedsdentistry.com'),
@@ -208,7 +215,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${jost.variable} antialiased`}>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

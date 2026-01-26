@@ -292,7 +292,7 @@ export default function Home() {
               />
             </div>
             {/* Green pill with white text */}
-            <h1 className="bg-[#2d5a27] text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-8 py-2.5 rounded-full shadow-lg">
+            <h1 className="bg-[#2d5a27] text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-8 py-2.5 rounded-full shadow-lg font-[family-name:var(--font-jost)]">
               Roots Pediatric Dentistry
             </h1>
           </motion.div>
