@@ -261,23 +261,16 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
-        {/* Sparkles Animation */}
+        {/* Floating Stars */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5]">
-          <div className="sparkle sparkle-1"></div>
-          <div className="sparkle sparkle-sm sparkle-2"></div>
-          <div className="sparkle sparkle-lg sparkle-3"></div>
-          <div className="sparkle sparkle-4"></div>
-          <div className="sparkle sparkle-sm sparkle-5"></div>
-          <div className="sparkle sparkle-6"></div>
-          <div className="sparkle sparkle-lg sparkle-7"></div>
-          <div className="sparkle sparkle-sm sparkle-8"></div>
-          <div className="sparkle sparkle-9"></div>
-          <div className="sparkle sparkle-lg sparkle-10"></div>
-          <div className="sparkle sparkle-sm sparkle-11"></div>
-          <div className="sparkle sparkle-12"></div>
-          <div className="sparkle sparkle-sm sparkle-13"></div>
-          <div className="sparkle sparkle-lg sparkle-14"></div>
-          <div className="sparkle sparkle-15"></div>
+          <div className="floating-star star-1">★</div>
+          <div className="floating-star star-2">★</div>
+          <div className="floating-star star-3">★</div>
+          <div className="floating-star star-4">★</div>
+          <div className="floating-star star-5">★</div>
+          <div className="floating-star star-6">★</div>
+          <div className="floating-star star-7">★</div>
+          <div className="floating-star star-8">★</div>
         </div>
 
         {/* Title at top */}
