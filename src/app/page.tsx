@@ -337,17 +337,17 @@ export default function Home() {
             className="inline-flex flex-col items-center"
           >
             {/* Logo above pill */}
-            <div className="-mb-6 z-10">
+            <div className="-mb-4 z-10">
               <Image
                 src="/images/logo.png"
                 alt="Roots Logo"
-                width={60}
-                height={60}
+                width={40}
+                height={40}
                 className="rounded-full"
               />
             </div>
             {/* Green pill with white text */}
-            <h1 className="bg-[#2d5a27] text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold px-8 sm:px-12 md:px-16 py-4 md:py-5 rounded-full shadow-lg">
+            <h1 className="bg-[#2d5a27] text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-8 py-2.5 rounded-full shadow-lg">
               Roots Pediatric Dentistry
             </h1>
           </motion.div>
