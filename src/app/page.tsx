@@ -249,7 +249,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
+      <section className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-start justify-center overflow-hidden pt-28 sm:pt-32 md:pt-36">
         <div className="absolute inset-0">
           <Image
             src="/images/heroimage.jpeg"
