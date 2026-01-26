@@ -107,3 +107,61 @@ body.highlight-links a {
 .skip-link:focus {
   top: 0;
 }
+
+/* Floating animations for hero */
+@keyframes floatAcross1 {
+  0% { transform: translateX(-50px) translateY(0); }
+  25% { transform: translateX(25vw) translateY(-15px); }
+  50% { transform: translateX(50vw) translateY(10px); }
+  75% { transform: translateX(75vw) translateY(-10px); }
+  100% { transform: translateX(105vw) translateY(0); }
+}
+
+@keyframes floatAcross2 {
+  0% { transform: translateX(-50px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(25vw) translateY(-20px) rotate(90deg); }
+  50% { transform: translateX(50vw) translateY(15px) rotate(180deg); }
+  75% { transform: translateX(75vw) translateY(-10px) rotate(270deg); }
+  100% { transform: translateX(105vw) translateY(0) rotate(360deg); }
+}
+
+@keyframes floatAcross3 {
+  0% { transform: translateX(-50px) translateY(0); }
+  33% { transform: translateX(33vw) translateY(-25px); }
+  66% { transform: translateX(66vw) translateY(20px); }
+  100% { transform: translateX(105vw) translateY(0); }
+}
+
+@keyframes bobbing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.float-tree-1 {
+  animation: floatAcross1 18s linear infinite;
+}
+
+.float-tree-2 {
+  animation: floatAcross1 22s linear infinite;
+  animation-delay: -5s;
+}
+
+.float-leaf-1 {
+  animation: floatAcross2 15s linear infinite;
+  animation-delay: -3s;
+}
+
+.float-leaf-2 {
+  animation: floatAcross2 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.float-flower-1 {
+  animation: floatAcross3 25s linear infinite;
+  animation-delay: -8s;
+}
+
+.float-flower-2 {
+  animation: floatAcross3 17s linear infinite;
+  animation-delay: -2s;
+}

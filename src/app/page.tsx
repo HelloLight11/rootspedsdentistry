@@ -263,69 +263,30 @@ export default function Home() {
 
         {/* Floating Trees Animation */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5]">
-          {/* Tree 1 - Green - starts visible */}
-          <motion.div
-            className="absolute text-4xl md:text-5xl opacity-70"
-            initial={{ x: '30vw', y: '20%' }}
-            animate={{ x: ['30vw', '120vw', '-10%', '30vw'], y: ['20%', '15%', '25%', '20%'] }}
-            transition={{ duration: 20, repeat: Infinity, ease: 'linear', y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
-          >
+          {/* Tree 1 */}
+          <div className="absolute top-[20%] text-4xl md:text-5xl opacity-60 float-tree-1">
             🌳
-          </motion.div>
-          {/* Tree 2 - Pink Blossom - starts visible */}
-          <motion.div
-            className="absolute text-3xl md:text-4xl opacity-70"
-            initial={{ x: '70vw', y: '60%' }}
-            animate={{ x: ['70vw', '120vw', '-10%', '70vw'], y: ['60%', '55%', '65%', '60%'] }}
-            transition={{ duration: 18, repeat: Infinity, ease: 'linear', y: { duration: 3, repeat: Infinity, ease: 'easeInOut' } }}
-          >
-            🌸
-          </motion.div>
-          {/* Tree 3 - Evergreen */}
-          <motion.div
-            className="absolute text-4xl md:text-5xl opacity-70"
-            initial={{ x: '10vw', y: '70%' }}
-            animate={{ x: ['10vw', '120vw', '-10%', '10vw'], y: ['70%', '65%', '75%', '70%'] }}
-            transition={{ duration: 22, repeat: Infinity, ease: 'linear', y: { duration: 5, repeat: Infinity, ease: 'easeInOut' } }}
-          >
+          </div>
+          {/* Tree 2 */}
+          <div className="absolute top-[65%] text-4xl md:text-5xl opacity-60 float-tree-2">
             🌲
-          </motion.div>
+          </div>
           {/* Leaf 1 - spinning */}
-          <motion.div
-            className="absolute text-2xl md:text-3xl opacity-80"
-            initial={{ x: '50vw', y: '40%' }}
-            animate={{ x: ['50vw', '120vw', '-10%', '50vw'], y: ['40%', '35%', '45%', '40%'], rotate: [0, 360] }}
-            transition={{ duration: 15, repeat: Infinity, ease: 'linear', y: { duration: 2, repeat: Infinity, ease: 'easeInOut' }, rotate: { duration: 8, repeat: Infinity, ease: 'linear' } }}
-          >
+          <div className="absolute top-[35%] text-2xl md:text-3xl opacity-70 float-leaf-1">
             🍃
-          </motion.div>
-          {/* Seedling */}
-          <motion.div
-            className="absolute text-3xl md:text-4xl opacity-70"
-            initial={{ x: '85vw', y: '30%' }}
-            animate={{ x: ['85vw', '120vw', '-10%', '85vw'], y: ['30%', '25%', '35%', '30%'] }}
-            transition={{ duration: 25, repeat: Infinity, ease: 'linear', y: { duration: 3.5, repeat: Infinity, ease: 'easeInOut' } }}
-          >
-            🌱
-          </motion.div>
-          {/* Clover - spinning */}
-          <motion.div
-            className="absolute text-2xl opacity-80"
-            initial={{ x: '20vw', y: '50%' }}
-            animate={{ x: ['20vw', '120vw', '-10%', '20vw'], y: ['50%', '45%', '55%', '50%'], rotate: [0, -360] }}
-            transition={{ duration: 17, repeat: Infinity, ease: 'linear', y: { duration: 2.5, repeat: Infinity, ease: 'easeInOut' }, rotate: { duration: 6, repeat: Infinity, ease: 'linear' } }}
-          >
+          </div>
+          {/* Leaf 2 - spinning */}
+          <div className="absolute top-[75%] text-2xl md:text-3xl opacity-70 float-leaf-2">
             🍀
-          </motion.div>
-          {/* Flower */}
-          <motion.div
-            className="absolute text-3xl opacity-70"
-            initial={{ x: '60vw', y: '80%' }}
-            animate={{ x: ['60vw', '120vw', '-10%', '60vw'], y: ['80%', '75%', '85%', '80%'] }}
-            transition={{ duration: 19, repeat: Infinity, ease: 'linear', y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
-          >
+          </div>
+          {/* Flower 1 */}
+          <div className="absolute top-[50%] text-3xl opacity-60 float-flower-1">
+            🌸
+          </div>
+          {/* Flower 2 */}
+          <div className="absolute top-[25%] text-3xl opacity-60 float-flower-2">
             🌷
-          </motion.div>
+          </div>
         </div>
 
         {/* Title at top */}
@@ -353,8 +314,8 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Tagline and CTAs centered */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex-1 flex flex-col items-center justify-center">
+        {/* Tagline and CTAs - positioned lower */}
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex-1 flex flex-col items-center justify-end pb-16 md:pb-24">
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
