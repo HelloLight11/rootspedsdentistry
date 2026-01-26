@@ -262,25 +262,23 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <motion.p
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[#a8e6cf] text-lg md:text-xl font-medium mb-4 tracking-wide"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-[1.1]"
           >
-            Welcome to Roots Pediatric Dentistry
-          </motion.p>
+            Roots Pediatric Dentistry
+          </motion.h1>
 
-          <motion.h1
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
+            className="text-xl md:text-2xl text-white/90 font-medium mb-6"
           >
-            Planting Seeds for
-            <br />
-            Lifelong <span className="text-[#7dffb3]">Smiles</span>
-          </motion.h1>
+            Planting Seeds for Lifelong <span className="text-[#7dffb3]">Smiles</span>
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
