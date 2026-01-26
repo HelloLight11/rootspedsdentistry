@@ -194,7 +194,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.tiktok.com/@roots_pediatric_dentistry"
+                  href="https://www.tiktok.com/@Roots_Pediatric_Dentistry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-[#b8f5a6] transition-colors"
@@ -204,7 +204,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <span className="text-white/50 mx-1">|</span>
-                <span className="text-white/80 text-sm font-medium">@roots_pediatric_dentistry</span>
+                <span className="text-white/80 text-sm font-medium">@Roots_Pediatric_Dentistry</span>
               </div>
             </div>
           </div>
