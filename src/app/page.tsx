@@ -249,7 +249,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-start justify-center overflow-hidden pt-28 sm:pt-32 md:pt-36">
+      <section className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex flex-col overflow-hidden pt-28 sm:pt-32 md:pt-36">
         <div className="absolute inset-0">
           <Image
             src="/images/heroimage.jpeg"
@@ -261,16 +261,20 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
+        {/* Title at top */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-[1.1]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#2d5a27] leading-[1.1]"
           >
             Roots Pediatric Dentistry
           </motion.h1>
+        </div>
 
+        {/* Tagline and CTAs centered */}
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex-1 flex flex-col items-center justify-center">
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
