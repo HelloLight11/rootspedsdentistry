@@ -261,6 +261,73 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
+        {/* Floating Trees Animation */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Tree 1 - Green */}
+          <motion.div
+            className="absolute text-4xl md:text-5xl"
+            initial={{ x: '-100%', y: '20%' }}
+            animate={{ x: '120vw', y: ['20%', '15%', '25%', '20%'] }}
+            transition={{ duration: 20, repeat: Infinity, ease: 'linear', y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
+          >
+            🌳
+          </motion.div>
+          {/* Tree 2 - Pink Blossom */}
+          <motion.div
+            className="absolute text-3xl md:text-4xl"
+            initial={{ x: '-100%', y: '60%' }}
+            animate={{ x: '120vw', y: ['60%', '55%', '65%', '60%'] }}
+            transition={{ duration: 25, repeat: Infinity, ease: 'linear', delay: 3, y: { duration: 3, repeat: Infinity, ease: 'easeInOut' } }}
+          >
+            🌸
+          </motion.div>
+          {/* Tree 3 - Evergreen */}
+          <motion.div
+            className="absolute text-4xl md:text-5xl"
+            initial={{ x: '-100%', y: '40%' }}
+            animate={{ x: '120vw', y: ['40%', '35%', '45%', '40%'] }}
+            transition={{ duration: 18, repeat: Infinity, ease: 'linear', delay: 7, y: { duration: 5, repeat: Infinity, ease: 'easeInOut' } }}
+          >
+            🌲
+          </motion.div>
+          {/* Leaf 1 */}
+          <motion.div
+            className="absolute text-2xl md:text-3xl"
+            initial={{ x: '-100%', y: '75%' }}
+            animate={{ x: '120vw', y: ['75%', '70%', '80%', '75%'], rotate: [0, 360] }}
+            transition={{ duration: 15, repeat: Infinity, ease: 'linear', delay: 2, y: { duration: 2, repeat: Infinity, ease: 'easeInOut' }, rotate: { duration: 8, repeat: Infinity, ease: 'linear' } }}
+          >
+            🍃
+          </motion.div>
+          {/* Seedling */}
+          <motion.div
+            className="absolute text-3xl md:text-4xl"
+            initial={{ x: '-100%', y: '85%' }}
+            animate={{ x: '120vw', y: ['85%', '80%', '90%', '85%'] }}
+            transition={{ duration: 22, repeat: Infinity, ease: 'linear', delay: 10, y: { duration: 3.5, repeat: Infinity, ease: 'easeInOut' } }}
+          >
+            🌱
+          </motion.div>
+          {/* Leaf 2 */}
+          <motion.div
+            className="absolute text-2xl"
+            initial={{ x: '-100%', y: '30%' }}
+            animate={{ x: '120vw', y: ['30%', '25%', '35%', '30%'], rotate: [0, -360] }}
+            transition={{ duration: 17, repeat: Infinity, ease: 'linear', delay: 5, y: { duration: 2.5, repeat: Infinity, ease: 'easeInOut' }, rotate: { duration: 6, repeat: Infinity, ease: 'linear' } }}
+          >
+            🍀
+          </motion.div>
+          {/* Flower */}
+          <motion.div
+            className="absolute text-3xl"
+            initial={{ x: '-100%', y: '50%' }}
+            animate={{ x: '120vw', y: ['50%', '45%', '55%', '50%'] }}
+            transition={{ duration: 19, repeat: Infinity, ease: 'linear', delay: 12, y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
+          >
+            🌷
+          </motion.div>
+        </div>
+
         {/* Title at top */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <motion.h1
