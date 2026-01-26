@@ -10,6 +10,7 @@ interface ServicePageTemplateProps {
   description: string[];
   highlights?: string[];
   imageUrl?: string;
+  children?: React.ReactNode;
 }
 
 export default function ServicePageTemplate({
@@ -18,6 +19,7 @@ export default function ServicePageTemplate({
   description,
   highlights,
   imageUrl = 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074',
+  children,
 }: ServicePageTemplateProps) {
   return (
     <>
@@ -97,6 +99,9 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* Custom Content */}
+      {children}
 
       {/* CTA Section */}
       <section className="py-20 bg-[#faf8f5]">
