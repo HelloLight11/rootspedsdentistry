@@ -277,9 +277,9 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
           >
-            Where Little <span className="text-[#7dffb3]">Smiles</span>
+            Planting Seeds for
             <br />
-            Take Root
+            Lifelong <span className="text-[#7dffb3]">Smiles</span>
           </motion.h1>
 
           <motion.div
