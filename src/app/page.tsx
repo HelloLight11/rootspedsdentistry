@@ -329,15 +329,28 @@ export default function Home() {
         </div>
 
         {/* Title at top */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <motion.h1
+        <div className="relative z-10 text-center px-4 mx-auto">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#2d5a27] leading-[1.1]"
+            className="inline-flex flex-col items-center"
           >
-            Roots Pediatric Dentistry
-          </motion.h1>
+            {/* Logo above pill */}
+            <div className="-mb-6 z-10">
+              <Image
+                src="/images/logo.png"
+                alt="Roots Logo"
+                width={60}
+                height={60}
+                className="rounded-full"
+              />
+            </div>
+            {/* Green pill with white text */}
+            <h1 className="bg-[#2d5a27] text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold px-8 sm:px-12 md:px-16 py-4 md:py-5 rounded-full shadow-lg">
+              Roots Pediatric Dentistry
+            </h1>
+          </motion.div>
         </div>
 
         {/* Tagline and CTAs centered */}
