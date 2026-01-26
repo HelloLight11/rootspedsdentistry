@@ -182,8 +182,9 @@ export default function Footer() {
               © {new Date().getFullYear()} Roots Pediatric Dentistry. All Rights Reserved.
             </p>
             <div className="flex items-center gap-4">
+              <span className="text-white/70 text-sm">@roots_pediatric_dentistry</span>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/roots_pediatric_dentistry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#b8f5a6] hover:text-[#2d5a27] transition-all duration-300"
@@ -193,7 +194,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.tiktok.com"
+                href="https://www.tiktok.com/@roots_pediatric_dentistry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#b8f5a6] hover:text-[#2d5a27] transition-all duration-300"
