@@ -37,7 +37,7 @@ export default function SpecialNeedsDentistryPage() {
         'Sedation options when needed',
         'Coordination with other healthcare providers',
       ]}
-      imageUrl="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=2070"
+      imageUrl="/images/special_needs.jpg"
     />
   );
 }
