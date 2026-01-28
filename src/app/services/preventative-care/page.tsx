@@ -167,6 +167,75 @@ export default function PreventativeCarePage() {
         </div>
       </section>
 
+      {/* Main Content */}
+      <section className="py-20 bg-[#f8f9fc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <AnimatedSection>
+              <div className="space-y-6">
+                <p className="text-lg text-[#595351] leading-relaxed">
+                  Regular dental check-ups and cleanings are vital for kids&apos; healthy smiles. Our warm, welcoming dental team ensures your child&apos;s teeth and gums stay sparkling and strong. We carefully examine their mouth and use x-rays when needed to spot any issues early.
+                </p>
+                <p className="text-lg text-[#595351] leading-relaxed">
+                  Preventative care is the foundation of good oral health. By catching potential problems early, we can often treat them with simpler, less invasive procedures. Our goal is to help your child maintain a healthy smile throughout their life.
+                </p>
+                <p className="text-lg text-[#595351] leading-relaxed">
+                  We recommend visits every six months, though some children may benefit from more frequent check-ups. During each visit, we&apos;ll clean your child&apos;s teeth, check for cavities, assess gum health, and provide fluoride treatments to strengthen tooth enamel.
+                </p>
+
+                <div className="mt-8 p-6 bg-white rounded-2xl shadow-md">
+                  <h3 className="text-lg font-semibold text-[#3d2f24] mb-4">
+                    What to Expect:
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      'Professional teeth cleaning and polishing',
+                      'Comprehensive oral examination',
+                      'Digital x-rays when necessary',
+                      'Fluoride treatments for cavity prevention',
+                      'Dental sealants to protect molars',
+                      'Personalized oral hygiene instruction',
+                    ].map((highlight, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <svg
+                          className="w-6 h-6 text-[#2d5a27] flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span className="text-[#595351]">{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection direction="right" delay={0.2}>
+              <div className="relative sticky top-32">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/PreventativeCare.jpeg"
+                    alt="Child receiving preventative dental care"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#b8f5a6] rounded-2xl -z-10" />
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#ffa797] rounded-full -z-10" />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-[#faf8f5]">
         <AnimatedSection className="max-w-4xl mx-auto px-4 text-center">
