@@ -97,7 +97,6 @@ const photoScrollImages = [
   '/images/photoscroll2.jpg',
   '/images/photoscroll4.jpg',
   '/images/photoscroll5.jpeg',
-  '/images/photoscroll6.jpeg',
   '/images/photoscroll7.jpg',
   '/images/photoscroll8.jpg',
 ];
