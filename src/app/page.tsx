@@ -614,8 +614,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-[#1e293b]">Hours</p>
-                    <p className="text-[#4b5563]">Mon-Thu: 9am-5pm<br />Fri-Sat: 9am-2pm</p>
+                    <p className="font-semibold text-[#1e293b]">Scheduling</p>
+                    <p className="text-[#4b5563]">Saturday & Evening<br />Appointments Available</p>
                   </div>
                 </div>
 

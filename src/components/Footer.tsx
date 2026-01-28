@@ -155,20 +155,43 @@ export default function Footer() {
 
           {/* Office Hours & Map */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Office Hours</h3>
-            <div className="space-y-1 text-sm text-white/70 mb-6">
-              <div className="flex justify-between">
-                <span>Mon - Thu</span>
-                <span>9:00 AM - 5:00 PM</span>
+            <h3 className="text-lg font-semibold mb-4 text-white">Scheduling</h3>
+            <div className="space-y-3 text-sm text-white/70 mb-6">
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-4 h-4 text-[#b8f5a6] flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Saturday Appointments</span>
               </div>
-              <div className="flex justify-between">
-                <span>Fri - Sat</span>
-                <span>9:00 AM - 2:00 PM</span>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-4 h-4 text-[#b8f5a6] flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Evening Appointments</span>
               </div>
-              <div className="flex justify-between">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </div>
+              <p className="text-white/50 text-xs pt-1">
+                Call or book online to schedule
+              </p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <iframe
