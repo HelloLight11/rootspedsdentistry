@@ -277,12 +277,12 @@ export default function PreventativeCarePage() {
             {/* Image */}
             <AnimatedSection>
               <div className="relative">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border-4 border-[#7cb342] bg-white">
                   <Image
                     src="/images/preventative2_web.jpeg"
                     alt="Child brushing teeth"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
