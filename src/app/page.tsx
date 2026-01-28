@@ -43,7 +43,7 @@ const services = [
     href: '/services/restorative-dentistry',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2C9.5 2 7.5 3 6.5 5c-.5 1-.5 2-.5 3 0 2 .5 4 1 6 .5 1.5 1 3 1.5 4.5.3 1 .8 2 1.5 2.5.5.3 1 .5 1.5.5s1-.2 1.5-.5c.5-.3.8-.7 1-1.2l.5-1.3.5 1.3c.2.5.5.9 1 1.2.5.3 1 .5 1.5.5s1-.2 1.5-.5c.7-.5 1.2-1.5 1.5-2.5.5-1.5 1-3 1.5-4.5.5-2 1-4 1-6 0-1 0-2-.5-3-1-2-3-3-5.5-3z" />
       </svg>
     ),
   },
