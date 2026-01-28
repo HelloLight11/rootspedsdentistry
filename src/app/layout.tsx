@@ -113,7 +113,7 @@ const structuredData = {
     'Roots Pediatric Dentistry provides gentle, fun dental care for infants, children, and teens in West Los Angeles. Dr. Joey Pedram has over 15 years of pediatric dentistry experience.',
   url: 'https://rootspedsdentistry.com',
   telephone: '+1-310-620-8181',
-  email: 'info@RootsPedsDentistry.com',
+  email: 'info@rootspedsdentistry.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '11620 Wilshire Blvd, Suite 720',

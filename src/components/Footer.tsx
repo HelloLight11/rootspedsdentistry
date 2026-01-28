@@ -40,10 +40,10 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="mailto:info@RootsPedsDentistry.com"
+                  href="mailto:info@rootspedsdentistry.com"
                   className="text-white/70 hover:text-[#b8f5a6] transition-colors text-sm"
                 >
-                  info@RootsPedsDentistry.com
+                  info@rootspedsdentistry.com
                 </a>
               </div>
               <div className="flex items-start gap-3">

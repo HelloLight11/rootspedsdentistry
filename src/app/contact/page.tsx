@@ -77,10 +77,10 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm text-[#595351] mb-1">Email</p>
                   <a
-                    href="mailto:info@RootsPedsDentistry.com"
+                    href="mailto:info@rootspedsdentistry.com"
                     className="block text-xl font-semibold text-[#2d5a27] hover:underline"
                   >
-                    Info@RootsPedsDentistry.com
+                    info@rootspedsdentistry.com
                   </a>
                 </div>
               </div>
