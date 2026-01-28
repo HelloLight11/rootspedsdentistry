@@ -146,7 +146,7 @@ export default function SedationDentistryPage() {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <div
                     className="w-full h-full bg-cover bg-top"
-                    style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070")' }}
+                    style={{ backgroundImage: 'url("/images/sedation_section.jpeg")' }}
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#b8f5a6] rounded-2xl -z-10" />

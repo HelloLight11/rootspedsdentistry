@@ -38,7 +38,7 @@ export default function EmergencyDentistryPage() {
         'Care for dental trauma',
         'After-hours emergency guidance',
       ]}
-      imageUrl="https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?q=80&w=2070"
+      imageUrl="/images/emergency_section.jpeg"
     />
   );
 }
