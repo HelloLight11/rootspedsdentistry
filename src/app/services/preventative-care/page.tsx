@@ -167,8 +167,68 @@ export default function PreventativeCarePage() {
         </div>
       </section>
 
+      {/* Preventative Dentistry Benefits - Arches */}
+      <section className="py-16 md:py-20 bg-[#f8f9fc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb342] font-[family-name:var(--font-fraunces)]">
+              Preventative Dentistry Benefits
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+            {[
+              {
+                title: 'Maintains Oral Health',
+                description:
+                  'Routine preventative care is vital for safeguarding your child\'s oral health. With dental checkups every six months, we can track your child\'s dental growth, quickly identify any issues, and offer timely interventions to maintain a healthy smile. Treatments such as cleanings, fluoride applications, and sealants protect your child\'s teeth from cavities and infections, laying the foundation for a lifetime of strong, healthy smiles.',
+              },
+              {
+                title: 'Building Healthy Habits',
+                description:
+                  'Preventive visits are the perfect opportunity to teach your child the importance of good oral hygiene habits at home. Our team will demonstrate proper brushing and flossing techniques in an engaging, easy-to-understand way, helping your child take pride in caring for their smile. We can also provide personalized guidance on diet and nutrition to help your child make smile-friendly choices.',
+              },
+              {
+                title: 'Creates a Positive Dental Relationship',
+                description:
+                  'We know dental visits can feel overwhelming for children. At Roots Pediatric Dentistry, our team creates a warm, welcoming environment to put kids at ease. Dr. Joey and our staff specialize in working with children, ensuring their visits are positive and comfortable. By fostering a good connection with dental care early, we lay the groundwork for a lifetime of healthy oral habits.',
+              },
+            ].map((benefit, index) => (
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <div className="relative flex flex-col items-center max-w-sm mx-auto md:max-w-none h-full">
+                  <div
+                    className="relative w-full border-2 border-[#7cb342] pt-16 md:pt-20 pb-8 md:pb-10 px-4 md:px-6 h-full bg-white"
+                    style={{
+                      borderRadius: '9999px 9999px 16px 16px',
+                    }}
+                  >
+                    <div className="absolute -top-8 md:-top-10 left-1/2 transform -translate-x-1/2">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center shadow-md">
+                        <Image
+                          src="/images/logo.png"
+                          alt="Roots Pediatric Dentistry"
+                          width={72}
+                          height={72}
+                          className="rounded-full w-14 h-14 md:w-[72px] md:h-[72px]"
+                        />
+                      </div>
+                    </div>
+                    <h3 className="text-lg md:text-xl font-bold text-[#3d2f24] mb-3 md:mb-4 mt-4 text-center font-[family-name:var(--font-fraunces)]">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-[#595351] text-sm leading-relaxed text-center">
+                      {benefit.description}
+                    </p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
-      <section className="py-20 bg-[#f8f9fc]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <AnimatedSection>
