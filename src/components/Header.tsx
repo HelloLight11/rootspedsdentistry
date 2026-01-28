@@ -125,12 +125,14 @@ export default function Header() {
               Contact
             </Link>
 
-            <Link
-              href="/contact"
+            <a
+              href="https://www.dental4.me/rootspediatricdentistry/1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 bg-[#b8f5a6] text-[#2d5a27] hover:bg-[#2d5a27] hover:text-white"
             >
               Book Appointment
-            </Link>
+            </a>
 
             <a
               href="tel:+13106208181"
@@ -253,13 +255,15 @@ export default function Header() {
                 Contact
               </Link>
               <div className="pt-2 space-y-2">
-                <Link
-                  href="/contact"
+                <a
+                  href="https://www.dental4.me/rootspediatricdentistry/1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block py-3 px-4 bg-[#2d5a27] text-white text-center rounded-full font-semibold hover:bg-[#478449] transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Book Appointment
-                </Link>
+                </a>
                 <a
                   href="tel:+13106208181"
                   className="flex items-center justify-center gap-2 py-3 px-4 border-2 border-[#2d5a27] text-[#2d5a27] text-center rounded-full font-semibold hover:bg-[#2d5a27] hover:text-white transition-colors"

@@ -1,15 +1,27 @@
 import type { Metadata } from 'next';
-import { Jost } from 'next/font/google';
+import { Poppins, Fraunces, Afacad } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AccessibilityWidget from '@/components/AccessibilityWidget';
 import Script from 'next/script';
 
-const jost = Jost({
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-jost',
+  variable: '--font-poppins',
+});
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-fraunces',
+});
+
+const afacad = Afacad({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-afacad',
 });
 
 export const metadata: Metadata = {
@@ -215,7 +227,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`${jost.variable} antialiased`}>
+      <body className={`${poppins.variable} ${fraunces.variable} ${afacad.variable} antialiased`}>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
@@ -223,6 +235,8 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <AccessibilityWidget />
+        {/* Tidio Chat Widget */}
+        <script src="//code.tidio.co/7iabnqaojmzqy8sq7oebjiadgwvppjkk.js" async></script>
       </body>
     </html>
   );

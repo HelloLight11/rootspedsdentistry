@@ -280,7 +280,7 @@ export default function Home() {
               />
             </div>
             {/* Green pill with white text */}
-            <h1 className="bg-[#2d5a27] text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-8 py-2.5 rounded-full shadow-lg font-[family-name:var(--font-jost)]">
+            <h1 className="bg-[#2d5a27] text-white text-xl sm:text-2xl md:text-3xl font-semibold px-8 sm:px-10 py-3 rounded-full shadow-lg font-[family-name:var(--font-fraunces)]">
               Roots Pediatric Dentistry
             </h1>
           </motion.div>
@@ -304,7 +304,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
             <Link
-              href="/contact"
+              href="https://www.dental4.me/rootspediatricdentistry/1"
               className="inline-flex items-center justify-center gap-2 bg-[#2d5a27] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#478449] transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               Book Appointment
@@ -335,7 +335,7 @@ export default function Home() {
             </p>
 
             {/* Main heading */}
-            <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#3d2f24] mb-6 font-[family-name:var(--font-jost)]">
+            <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#3d2f24] mb-6 font-[family-name:var(--font-fraunces)]">
               Welcome to Roots Pediatric Dentistry
             </h2>
 
@@ -373,71 +373,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Services */}
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2d5a27] via-[#a8e6cf] to-[#2d5a27]" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
-              Why Families Choose Us
+              Our Services
             </h2>
+            <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
+              Complete dental care for every stage of childhood.
+            </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: (
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                ),
-                title: 'Fun & Friendly',
-                description: 'Office designed to make kids smile',
-                color: 'bg-[#a8e6cf]',
-              },
-              {
-                icon: (
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                ),
-                title: 'Gentle Touch',
-                description: 'Patient care for anxious children',
-                color: 'bg-[#ffa797]',
-              },
-              {
-                icon: (
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                  </svg>
-                ),
-                title: '15+ Years',
-                description: 'Trusted pediatric expertise',
-                color: 'bg-[#b8f5a6]',
-              },
-              {
-                icon: (
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                ),
-                title: 'Flexible Hours',
-                description: 'Scheduling that fits your life',
-                color: 'bg-[#ffd6cc]',
-              },
-            ].map((feature, index) => (
-              <AnimatedSection key={feature.title} delay={index * 0.1}>
-                <div className="text-center group">
-                  <div className={`w-20 h-20 ${feature.color} rounded-3xl flex items-center justify-center mx-auto mb-4 text-[#2d5a27] group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
-                    {feature.icon}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {services.map((service, index) => (
+              <AnimatedSection key={service.title} delay={index * 0.08}>
+                <Link href={service.href} className="block h-full group">
+                  <div className="bg-[#f8f9fc] p-6 rounded-2xl h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white border border-transparent hover:border-[#2d5a27]/20">
+                    <div className="w-12 h-12 bg-[#2d5a27] rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform duration-300">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-lg font-bold text-[#1e293b] mb-2 group-hover:text-[#2d5a27] transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-[#4b5563]">
+                      {service.description}
+                    </p>
                   </div>
-                  <h3 className="text-lg font-bold text-[#1e293b] mb-1">{feature.title}</h3>
-                  <p className="text-sm text-[#4b5563]">{feature.description}</p>
-                </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>
+
+          <AnimatedSection delay={0.5} className="text-center mt-8">
+            <Link
+              href="/services/emergency-dentistry"
+              className="inline-flex items-center gap-2 text-[#e8856c] font-semibold hover:text-[#d46a4f] transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Dental Emergency? We&apos;re here to help
+            </Link>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -503,49 +483,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e293b] mb-4">
-              Our Services
+              Why Families Choose Us
             </h2>
-            <p className="text-lg text-[#4b5563] max-w-2xl mx-auto">
-              Complete dental care for every stage of childhood.
-            </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((service, index) => (
-              <AnimatedSection key={service.title} delay={index * 0.08}>
-                <Link href={service.href} className="block h-full group">
-                  <div className="bg-[#f8f9fc] p-6 rounded-2xl h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white border border-transparent hover:border-[#2d5a27]/20">
-                    <div className="w-12 h-12 bg-[#2d5a27] rounded-xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform duration-300">
-                      {service.icon}
-                    </div>
-                    <h3 className="text-lg font-bold text-[#1e293b] mb-2 group-hover:text-[#2d5a27] transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-[#4b5563]">
-                      {service.description}
-                    </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: 'Fun & Friendly',
+                description: 'Office designed to make kids smile',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                ),
+                title: 'Gentle Touch',
+                description: 'Patient care for anxious children',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                ),
+                title: '15+ Years',
+                description: 'Trusted pediatric expertise',
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: 'Flexible Hours',
+                description: 'Scheduling that fits your life',
+              },
+            ].map((feature, index) => (
+              <AnimatedSection key={feature.title} delay={index * 0.1}>
+                <div className="text-center group">
+                  <div className="w-20 h-20 bg-[#2d5a27] rounded-3xl flex items-center justify-center mx-auto mb-4 text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                    {feature.icon}
                   </div>
-                </Link>
+                  <h3 className="text-lg font-bold text-[#1e293b] mb-1">{feature.title}</h3>
+                  <p className="text-sm text-[#4b5563]">{feature.description}</p>
+                </div>
               </AnimatedSection>
             ))}
           </div>
-
-          <AnimatedSection delay={0.5} className="text-center mt-8">
-            <Link
-              href="/services/emergency-dentistry"
-              className="inline-flex items-center gap-2 text-[#e8856c] font-semibold hover:text-[#d46a4f] transition-colors"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Dental Emergency? We&apos;re here to help
-            </Link>
-          </AnimatedSection>
         </div>
       </section>
 
@@ -594,7 +590,7 @@ export default function Home() {
                 Visit Our Office
               </h2>
               <p className="text-lg text-[#4b5563] mb-8">
-                Conveniently located in West Los Angeles with easy parking.
+                Conveniently located in the heart of Brentwood, Los Angeles with easy parking.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -670,14 +666,14 @@ export default function Home() {
       <section className="py-16 bg-[#f8f9fc]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <h3 className="text-2xl font-bold text-[#1e293b] mb-4">Insurance & Payment</h3>
-            <p className="text-[#4b5563] mb-6">
-              We accept most PPO dental insurance plans and offer flexible payment options including HSA/FSA.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Most PPO Plans', 'Flexible Payments', 'HSA/FSA Accepted', 'Care Credit'].map((item) => (
-                <span key={item} className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm text-[#334155] shadow-sm">
-                  <svg className="w-4 h-4 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                'Saturday and Evening Appointments Available!',
+                'Complimentary Exam for Children 3 & Under',
+                'We Accept Most PPO Insurances',
+              ].map((item) => (
+                <span key={item} className="inline-flex items-center gap-2 bg-white px-5 py-3 rounded-full text-sm md:text-base text-[#334155] shadow-sm">
+                  <svg className="w-5 h-5 text-[#2d5a27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   {item}
@@ -711,7 +707,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="https://www.dental4.me/rootspediatricdentistry/1"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#2d5a27] px-10 py-5 rounded-full font-semibold text-lg hover:bg-[#a8e6cf] transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               Book Appointment

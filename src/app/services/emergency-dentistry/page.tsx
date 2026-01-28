@@ -28,7 +28,7 @@ export default function EmergencyDentistryPage() {
       description={[
         "When your child faces a dental emergency, prompt care is key to relieving their pain. Toothaches, chipped teeth, or other issues can disrupt school, sports, and mealtimes. At Roots Pediatric Dentistry, we prioritize emergency cases and strive to see your child as quickly as possible.",
         "Dental emergencies can be stressful for both children and parents. Dr. Joey and our team are here to help. We'll assess the situation, relieve your child's pain, and provide the necessary treatment to protect their oral health.",
-        "If your child experiences a dental emergency, please call our office immediately at (310) 620-8181. We'll guide you on immediate care steps and schedule an emergency appointment. For life-threatening emergencies, please call 911 or go to the nearest emergency room.",
+        "If your child experiences a dental emergency, please call our office immediately at (310) 620-8181. We'll guide you on immediate care steps and schedule an emergency appointment as soon as possible.",
       ]}
       highlights={[
         'Same-day emergency appointments',

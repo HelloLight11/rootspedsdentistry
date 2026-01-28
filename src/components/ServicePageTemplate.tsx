@@ -114,12 +114,14 @@ export default function ServicePageTemplate({
             helping your little one achieve a healthy, beautiful smile!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
+            <a
+              href="https://www.dental4.me/rootspediatricdentistry/1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#2d5a27] hover:bg-[#478449] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg"
             >
               Book an Appointment
-            </Link>
+            </a>
             <a
               href="tel:+13106208181"
               className="border-2 border-[#2d5a27] text-[#2d5a27] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#2d5a27] hover:text-white transition-all duration-300"

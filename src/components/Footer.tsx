@@ -39,12 +39,22 @@ export default function Footer() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a
-                  href="mailto:info@RootsPedsDentistry.com"
-                  className="text-white/70 hover:text-[#b8f5a6] transition-colors text-sm"
-                >
-                  info@RootsPedsDentistry.com
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="mailto:info@RootsPedsDentistry.com"
+                    className="text-white/70 hover:text-[#b8f5a6] transition-colors text-sm"
+                  >
+                    info@RootsPedsDentistry.com
+                  </a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=drjoey@rootspedsdentistry.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/70 hover:text-[#b8f5a6] transition-colors text-sm"
+                  >
+                    drjoey@rootspedsdentistry.com
+                  </a>
+                </div>
               </div>
               <div className="flex items-start gap-3">
                 <svg
