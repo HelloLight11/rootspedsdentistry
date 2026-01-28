@@ -279,7 +279,7 @@ export default function PreventativeCarePage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                   <Image
-                    src="/images/PreventativeCare.jpeg"
+                    src="/images/preventative2_web.jpeg"
                     alt="Child brushing teeth"
                     fill
                     className="object-cover"
