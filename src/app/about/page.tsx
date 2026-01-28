@@ -79,7 +79,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/drjoey-photo.jpg"
+                    src="/images/aboutme_family.jpg"
                     alt="Dr. Joey Pedram"
                     fill
                     className="object-cover"
