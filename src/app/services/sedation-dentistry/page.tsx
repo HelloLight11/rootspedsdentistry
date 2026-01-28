@@ -143,9 +143,9 @@ export default function SedationDentistryPage() {
 
             <AnimatedSection direction="right" delay={0.2}>
               <div className="relative sticky top-32">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                   <div
-                    className="w-full h-full bg-cover bg-top"
+                    className="w-full h-full bg-cover bg-center"
                     style={{ backgroundImage: 'url("/images/sedation_section.jpeg")' }}
                   />
                 </div>
