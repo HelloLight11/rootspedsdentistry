@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#3d4f5f] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#5a7a8a] ${
         isScrolled
           ? 'shadow-md py-2'
           : 'shadow-sm py-3'
@@ -184,7 +184,7 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-[#3d4f5f] border-t border-white/10 shadow-lg"
+            className="lg:hidden bg-[#5a7a8a] border-t border-white/10 shadow-lg"
           >
             <div className="px-4 py-4 space-y-1">
               <Link
