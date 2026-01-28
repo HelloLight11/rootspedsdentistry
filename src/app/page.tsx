@@ -295,9 +295,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-xl md:text-2xl text-white/90 font-medium mb-6"
+            className="text-sm md:text-base text-white tracking-[0.2em] uppercase font-medium mb-6"
           >
-            Planting Seeds for Lifelong <span className="text-white">Smiles</span>
+            Planting Seeds for Lifelong Smiles
           </motion.p>
 
           <motion.div
@@ -357,7 +357,7 @@ export default function Home() {
       <section className="py-12 bg-[#2d5a27]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white text-center italic">
+            <p className="text-sm md:text-base text-white text-center tracking-[0.2em] uppercase font-medium">
               Rooted in care, blooming in smiles
             </p>
           </AnimatedSection>
