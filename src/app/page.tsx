@@ -357,7 +357,7 @@ export default function Home() {
       <section className="py-12 bg-[#2d5a27]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <p className="text-sm md:text-base text-white text-center tracking-[0.2em] uppercase font-medium">
+            <p className="text-lg md:text-xl lg:text-2xl text-white text-center tracking-[0.2em] uppercase font-medium">
               Rooted in care, blooming in smiles
             </p>
           </AnimatedSection>
