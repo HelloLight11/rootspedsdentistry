@@ -172,9 +172,6 @@ export default function RestorativeDentistryPage() {
         </div>
       </section>
 
-      {/* Benefits Section with Arches */}
-      <BenefitsSection />
-
       {/* Main Content */}
       <section className="py-20 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -241,6 +238,9 @@ export default function RestorativeDentistryPage() {
           </div>
         </div>
       </section>
+
+      {/* Benefits Section with Arches */}
+      <BenefitsSection />
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
