@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <AnimatedSection>
+            <AnimatedSection className="order-2 lg:order-1">
               <div className="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
                 {isSubmitted ? (
                   <div className="text-center py-12">
@@ -217,7 +217,7 @@ export default function ContactPage() {
             </AnimatedSection>
 
             {/* Contact Info */}
-            <AnimatedSection direction="right" delay={0.2}>
+            <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2">
               <div className="space-y-8">
                 {/* Phone */}
                 <a
