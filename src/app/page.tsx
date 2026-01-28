@@ -286,8 +286,8 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Tagline and CTAs - positioned lower */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex-1 flex flex-col items-center justify-end pb-16 md:pb-24">
+        {/* Tagline and CTAs - positioned at bottom */}
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex-1 flex flex-col items-center justify-end pb-8 md:pb-12">
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
