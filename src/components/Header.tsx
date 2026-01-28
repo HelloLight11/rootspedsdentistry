@@ -31,10 +31,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#5a7a8a] ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'shadow-md py-2'
-          : 'shadow-sm py-3'
+          ? 'bg-white shadow-md py-2'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,13 +55,21 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className="font-medium text-white transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#b8f5a6] after:transition-all after:duration-300 hover:after:w-full hover:text-[#b8f5a6]"
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:transition-all after:duration-300 hover:after:w-full ${
+                isScrolled
+                  ? 'text-[#1e293b] after:bg-[#2d5a27] hover:text-[#2d5a27]'
+                  : 'text-white after:bg-[#b8f5a6] hover:text-[#b8f5a6]'
+              }`}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="font-medium text-white transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#b8f5a6] after:transition-all after:duration-300 hover:after:w-full hover:text-[#b8f5a6]"
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:transition-all after:duration-300 hover:after:w-full ${
+                isScrolled
+                  ? 'text-[#1e293b] after:bg-[#2d5a27] hover:text-[#2d5a27]'
+                  : 'text-white after:bg-[#b8f5a6] hover:text-[#b8f5a6]'
+              }`}
             >
               About
             </Link>
@@ -73,7 +81,11 @@ export default function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className="font-medium text-white transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#b8f5a6] after:transition-all after:duration-300 hover:after:w-full hover:text-[#b8f5a6]"
+                className={`font-medium transition-all duration-300 flex items-center gap-1 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:transition-all after:duration-300 hover:after:w-full ${
+                  isScrolled
+                    ? 'text-[#1e293b] after:bg-[#2d5a27] hover:text-[#2d5a27]'
+                    : 'text-white after:bg-[#b8f5a6] hover:text-[#b8f5a6]'
+                }`}
               >
                 Services
                 <svg
@@ -120,7 +132,11 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="font-medium text-white transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#b8f5a6] after:transition-all after:duration-300 hover:after:w-full hover:text-[#b8f5a6]"
+              className={`font-medium transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:transition-all after:duration-300 hover:after:w-full ${
+                isScrolled
+                  ? 'text-[#1e293b] after:bg-[#2d5a27] hover:text-[#2d5a27]'
+                  : 'text-white after:bg-[#b8f5a6] hover:text-[#b8f5a6]'
+              }`}
             >
               Contact
             </Link>
@@ -141,14 +157,16 @@ export default function Header() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call Us
+              (310) 620-8181
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg transition-colors duration-300 text-white"
+            className={`lg:hidden p-2 rounded-lg transition-colors duration-300 ${
+              isScrolled ? 'text-[#1e293b]' : 'text-white'
+            }`}
           >
             <svg
               className="w-6 h-6"
@@ -184,19 +202,19 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-[#5a7a8a] border-t border-white/10 shadow-lg"
+            className="lg:hidden bg-white border-t border-gray-100 shadow-lg"
           >
             <div className="px-4 py-4 space-y-1">
               <Link
                 href="/"
-                className="block py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
@@ -206,7 +224,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                  className="w-full flex items-center justify-between py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
+                  className="w-full flex items-center justify-between py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 >
                   Services
                   <svg
@@ -232,7 +250,7 @@ export default function Header() {
                           <Link
                             key={service.href}
                             href={service.href}
-                            className="block py-2 px-4 text-white/80 hover:bg-white/10 hover:text-white rounded-lg transition-colors text-sm"
+                            className="block py-2 px-4 text-[#4b5563] hover:bg-[#b8f5a6]/30 hover:text-[#2d5a27] rounded-lg transition-colors text-sm"
                             onClick={() => {
                               setIsMobileMenuOpen(false);
                               setIsMobileServicesOpen(false);
@@ -249,7 +267,7 @@ export default function Header() {
 
               <Link
                 href="/contact"
-                className="block py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
+                className="block py-3 px-4 text-[#1e293b] hover:bg-[#b8f5a6]/30 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
@@ -272,7 +290,7 @@ export default function Header() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  Call Us
+                  (310) 620-8181
                 </a>
               </div>
             </div>
