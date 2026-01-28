@@ -120,8 +120,11 @@ export default function SedationDentistryPage() {
         </div>
       </section>
 
+      {/* Sedation Options with Arches */}
+      <SedationOptionsSection />
+
       {/* Main Content */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <AnimatedSection>
@@ -135,39 +138,6 @@ export default function SedationDentistryPage() {
                 <p className="text-lg text-[#595351] leading-relaxed">
                   Safety is our top priority. Our team is specially trained in pediatric sedation, and we carefully monitor your child throughout the entire procedure. We&apos;ll provide detailed pre- and post-sedation instructions to ensure a smooth experience.
                 </p>
-
-                <div className="mt-8 p-6 bg-[#faf8f5] rounded-2xl">
-                  <h3 className="text-lg font-semibold text-[#3d2f24] mb-4">
-                    What to Expect:
-                  </h3>
-                  <ul className="space-y-3">
-                    {[
-                      'Nitrous oxide (laughing gas)',
-                      'Oral conscious sedation',
-                      'IV sedation for extensive procedures',
-                      'Continuous monitoring throughout treatment',
-                      'Board-certified pediatric dentist',
-                      'Detailed pre and post-op instructions',
-                    ].map((highlight, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <svg
-                          className="w-6 h-6 text-[#2d5a27] flex-shrink-0 mt-0.5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span className="text-[#595351]">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </AnimatedSection>
 
@@ -186,9 +156,6 @@ export default function SedationDentistryPage() {
           </div>
         </div>
       </section>
-
-      {/* Sedation Options with Arches */}
-      <SedationOptionsSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#faf8f5]">
