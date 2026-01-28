@@ -95,7 +95,6 @@ const testimonials = [
 const photoScrollImages = [
   '/images/photoscroll1.jpg',
   '/images/photoscroll2.jpg',
-  '/images/photoscroll3.jpeg',
   '/images/photoscroll4.jpg',
 ];
 
