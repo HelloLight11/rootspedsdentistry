@@ -120,9 +120,6 @@ export default function SedationDentistryPage() {
         </div>
       </section>
 
-      {/* Sedation Options with Arches */}
-      <SedationOptionsSection />
-
       {/* Main Content */}
       <section className="py-20 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -156,6 +153,9 @@ export default function SedationDentistryPage() {
           </div>
         </div>
       </section>
+
+      {/* Sedation Options with Arches */}
+      <SedationOptionsSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#faf8f5]">
