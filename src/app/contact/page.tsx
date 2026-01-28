@@ -82,14 +82,6 @@ export default function ContactPage() {
                   >
                     Info@RootsPedsDentistry.com
                   </a>
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=drjoey@rootspedsdentistry.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-lg font-semibold text-[#2d5a27] hover:underline"
-                  >
-                    drjoey@rootspedsdentistry.com
-                  </a>
                 </div>
               </div>
 
