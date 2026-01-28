@@ -125,6 +125,9 @@ export default function PreventativeCarePage() {
         </div>
       </section>
 
+      {/* Preventive Services with Arches */}
+      <PreventiveServicesSection />
+
       {/* Main Content */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -193,9 +196,6 @@ export default function PreventativeCarePage() {
           </div>
         </div>
       </section>
-
-      {/* Preventive Services with Arches */}
-      <PreventiveServicesSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#faf8f5]">
